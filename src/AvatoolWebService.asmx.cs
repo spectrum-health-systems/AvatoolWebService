@@ -1,11 +1,14 @@
 ﻿// ===========================================================================================================  3:01 PM
 //    FILENAME: AvatoolWebService.asmx.cs
-//       BUILD: 20191029
-//     PROJECT: Avatool-Web-Service (https://github.com/APrettyCoolProgram/Avatool-Web-Service)
+//       BUILD: 20191113
+//     PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
 //     AUTHORS: development@aprettycoolprogram.com
 //   COPYRIGHT: Copyright 2019 A Pretty Cool Program
 //     LICENSE: Apache License, Version 2.0
 // ====================================================================================================================
+
+/* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
+ */
 
 using NTST.ScriptLinkService.Objects;
 using System;
@@ -38,104 +41,149 @@ namespace Avatool_Web_Service
         }
 
         /// <summary>
-        /// Performs an Avatool Web Service action
+        /// Performs an Avatool Web Service action.
         /// </summary>
         /// <param name="sentOptionObject">The OptionObject2 object from myAvatar.</param>
-        /// <param name="action"></param>
-        /// <returns></returns>
+        /// <param name="action">The action you want the Web Service to perform.</param>
+        /// <returns>A completed OptionObject.</returns>
         [WebMethod]
         public OptionObject2 RunScript(OptionObject2 sentOptionObject, string action)
         {
+            /* When you create an Avatool Web Service ScriptLink event in myAvatar, you need to pass an action that the
+             * web service will perform. This action is the defined in the "parameter" field for the "Available Script"
+             * that you have selected in the Form Designer. Each action is handled by an individual method.
+             *
+             * The action must be one of the case statements in the block of code below. The official Avatool Web
+             * Service release has the following potential actions:
+             *
+             *  - VerifyInpatientAdmissionDate : Verify that the Inpatient Admission Date is the same as the system
+             *                                   date.
+             */
             switch (action)
             {
                 case "VerifyInpatientAdmissionDate":
-                    return VerifyInpatientAdmissionDate(sentOptionObject);
+                    return VerifyInpatientAdmissionDate(sentOptionObject);                                             // TODO Define the OptionObject here, and have a single return statement.
+
+                default:
+                    return sentOptionObject;                                                                           // TODO Define the OptionObject here, and have a single return statement.
             }
 
             return sentOptionObject;
         }
 
+        /// <summary>
+        /// Verify that the Inpatient Admission Date is the same as the system date.
+        /// </summary>
+        /// <param name="sentOptionObject">The sent OptionObject</param>
+        /// <returns>A completed OptionObject.</returns>
         public static OptionObject2 VerifyInpatientAdmissionDate(OptionObject2 sentOptionObject)
         {
-            /*Using the form Admission verify that the user is changing the apreadmit to admission date when selecting Admission from the dropdown
-             option for Type of Admission
+            /* This method verifies that an existing Pre-Admission date is the same as the system date.
+             *
+             * Here is how it works:
+             *
+             *  - When a completed Admission form is submitted, we check to if the "Admission Type" is "Pre-Admission".
+             *
+             *  - If the "Admission Type" is set to  "Pre-Admission" and the "Pre-Admission Date" is not the same as
+             *    the system date, a pop-up will notify the user that they need to modify the Pre-Admission Date field
+             *    to equal the system time, and the user will be returned to the form to modify the Pre-Admission Date.
+             *
+             *  - If the "Admission Type" is not set to "Pre-Admission", or if it is and the Pre-Admission Date is the
+             *    same as the system date, the form is submitted normally.
              */
 
-            /* This is the empty OptionObject that we will complete and send back to myAvatar.
+            /* Let's initialize a bunch of stuff!
              */
-            var returnOptionObject = new OptionObject2();
 
-            /* These are the ID numbers for the Type of Admission dropdown and Pre-admit to Admission date fields.
-             * You will need to modify these to match your environment.
+            /* You will need to modify these values to match the fieldIDs for your organization.
              */
             const string typeOfAdmissionField         = "44";
             const string preAdmitToAdmissionDateField = "42";
+            const int    preAdmission                 = 3;
 
-            /* Placeholders
-             */
             var typeOfAdmission         = 0;
             var preAdmitToAdmissionDate = new DateTime(1900, 1, 1);
 
-            /* Since we are going to compare the date on the form to today's date, we need today's date.
-             **/
-            var todaysDate = new DateTime(2019, 1, 18);
-
-            // Loop through the forms in the sent option,
+            /* We'll start by looping through each of the forms passed via the OptionObject.
+             */
             foreach (var form in sentOptionObject.Forms)
             {
+                /* And for each of those forms, we'll look at each field.
+                 */
                 foreach (var field in form.CurrentRow.Fields)
                 {
+                    /* If the field we are looking at is either "Type of Admission" or "Pre-Admit to Admission Date",
+                     * we'll do something special.
+                     */
                     switch (field.FieldNumber)
                     {
                         case typeOfAdmissionField:
-                            typeOfAdmission = int.Parse(field.FieldValue);
-
+                            typeOfAdmission = int.Parse(field.FieldValue);                                             // TODO Convert.ToInt()?
                             break;
 
                         case preAdmitToAdmissionDateField:
                             preAdmitToAdmissionDate = Convert.ToDateTime(field.FieldValue);
+                            break;
 
+                        default:
                             break;
                     }
                 }
             }
 
-            // Placeholders for potential error message information
+            /* These are the valid Error Codes that can be used with myAvatar:
+             *  1: Returns an Error Message and stops further processing of scripts (if set)
+             *  2: Returns an Error Message with OK/Cancel buttons (further scripts are stopped if Cancelled)
+             *  3: Returns an Error Message with OK button
+             *  4: Returns an Error Message with Yes/No buttons (further scripts are stopped if No)
+             *  5: Returns a URL to be opened in a new browser
+             *
+             * We are interested in Error Codes 1 and 4, the default being Error Code 1.
+             *
+             * Use Error Code 1 if you want to force the user to fix the date issue prior to submitting the form. Keep
+             * in mind that when using this Error Code, the form cannot be submitted until the Pre-Admission Date
+             * matches the system date.
+             *
+             * Use Error Code 4 to allow the user to ignore the date issue, and submit the form with different dates.
+             */
+            var systemDate       = new DateTime(2019, 1, 18);                                                          // TODO Use the same formatting as the above declaration.
             var errorMessageBody = string.Empty;
             var errorMessageCode = 0;
 
-            if (typeOfAdmission == 3)
+            if (typeOfAdmission == preAdmission)
             {
-                if (preAdmitToAdmissionDate != todaysDate)
+                if (preAdmitToAdmissionDate != systemDate)
                 {
-                    errorMessageBody = "HEY LOOK AT THE DATE. DO YOU WANT TO FIX?";
-                    errorMessageCode = 1; // This should be 4 if you want to give the option
+                    errorMessageBody = "WARNING\nThe Pre-Admission date does not match today's date";
+                    errorMessageCode = 1;
                 }
-                else
-                {
-                    // Do nothing.
-                }
-            }
-            else
-            {
-                // Do nothing.
             }
 
-            // As long as there is an error code, add the error message info to the return object.
+            var returnOptionObject = new OptionObject2();
+
+            /* If there is a valid error code, add the error message info to the return object.
+             */
             if (errorMessageCode != 0)
             {
                 returnOptionObject.ErrorCode = errorMessageCode;
                 returnOptionObject.ErrorMesg = errorMessageBody;
             }
-            else
-            {
-                // Catcher
-                returnOptionObject.ErrorCode = 4;
-                returnOptionObject.ErrorMesg = "[OUT OF BOUNDS ERROR]\nType of admission: " + typeOfAdmission + "\n" + "Date: " + preAdmitToAdmissionDate;
-            }
+
+            /* >>> DEBUGGING ONLY <<<
+             *
+             * When this block of code is uncommented, a pop-up will always appear with detailed information. This is
+             * useful when debugging VerifyInpatientAdmissionDate. If you aren't debugging this code, this block should
+             * be commented.
+             */
+            //if (errorMessageCode == 0)
+            //{
+            //    returnOptionObject.ErrorCode = 4;
+            //    returnOptionObject.ErrorMesg = "[OUT OF BOUNDS ERROR]\nType of admission: " + typeOfAdmission + "\n" + "Date: " + preAdmitToAdmissionDate;
+            //}
 
 
-            // We need to make sure that the OptionObject is completed prior to returning it.
+            /* We need to make sure that the OptionObject is completed prior to returning it.
+             */
             return CompleteOptionObject(sentOptionObject, returnOptionObject, true, false);
         }
 
