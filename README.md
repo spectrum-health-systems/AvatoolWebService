@@ -70,27 +70,49 @@ The Avatool Web Service is one such custom web service which includes various to
 * A solid foundation to build additional custom tools and utilities
 
 # REQUIREMENTS
-* A location to host the Avatool Web Service via HTTPS
-* Access to your myAvatar™ environments from the Avatool Web Service
+* A location to host the Avatool Web Service
+* Access to your myAvatar™ environments from the Avatool Web Service via HTTPS
 
 # BEFORE YOU BEGIN
 There are a few things you should know before using the Avatool Web Service in your myAvatar environments.
 
 First, some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
-You'll also need a location to host the Avatool Web Service. You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?). In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10)(YMMV), if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10) (YMMV!), if you decide to go that route.
+
+You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
+
+### SCRIPTLINK
+When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
+
+The bottom line is, as far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*. Netsmart makes ScriptLink out to be something bigger, or maybe a framework, or an actuall web service...but my experience is ScriptLink is essentially a line of code in form designer that kicks off the magical stuff you've written in a custom web service.
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
+
 ### PRE-REQUISITES
-### DEPENDENCIES
-### RECOMMENDATIONS
+If you are self-hosting the Avatool Web Service, you will need a web server that:
+* Can serve data via HTTPS
+* Includes the .NET 4.6 framework
 
 # INSTALLATION
-The Avatool Web Service isn't technically installed, it is hosted on a Web Server. You can either host the Avatool Web Service with Netsmart, read my [notes on setting up IIS for the Avatool Web Service](), or strike our on your own.
+The Avatool Web Service isn't *installed* so much as it is *published*.
+
+The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
 
 # USAGE
-### Important notes about usage
+### WHAT IS SCRIPTLINK
+
+
+
+
+There are a variety of ways to use custom web services with myAvatar, the most common being:
+* when a form loads
+* after the submit button is clicked, but prior to filing the form
+* after the submit button is clicked and the form has been filed
+
+You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
+
 
 # UPDATING
 
