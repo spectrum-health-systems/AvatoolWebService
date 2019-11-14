@@ -70,27 +70,93 @@ The Avatool Web Service is one such custom web service which includes various to
 * A solid foundation to build additional custom tools and utilities
 
 # REQUIREMENTS
-* A location to host the Avatool Web Service via HTTPS
-* Access to your myAvatar™ environments from the Avatool Web Service
+* A location to host the Avatool Web Service
+* Access to your myAvatar™ environments from the Avatool Web Service via HTTPS
 
 # BEFORE YOU BEGIN
 There are a few things you should know before using the Avatool Web Service in your myAvatar environments.
 
 First, some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
-You'll also need a location to host the Avatool Web Service. You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?). In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10)(YMMV), if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10) (YMMV!), if you decide to go that route.
+
+You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
+
+### SCRIPTLINK
+When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
+
+Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service. 
+
+As far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*.
+
+In my experience, ScriptLink is essentially a line of code in the form designer that kicks off the magical stuff you've written in a custom web service.
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
+
 ### PRE-REQUISITES
-### DEPENDENCIES
-### RECOMMENDATIONS
+If you are self-hosting the Avatool Web Service, you will need a web server that:
+* Can serve data via HTTPS
+* Includes the .NET 4.6 framework
 
 # INSTALLATION
-The Avatool Web Service isn't technically installed, it is hosted on a Web Server. You can either host the Avatool Web Service with Netsmart, read my [notes on setting up IIS for the Avatool Web Service](), or strike our on your own.
+The Avatool Web Service isn't *installed* so much as it is *published*.
+
+The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
 
 # USAGE
-### Important notes about usage
+There are a variety of ways to use custom web services with myAvatar, the most common being:
+* when a form loads ("Form Load")
+* after the submit button is clicked, but prior to filing the form ("Pre-File")
+* after the submit button is clicked and the form has been filed ("Post-File")
+
+You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
+
+### ADDING A SCRIPT LINK TO A FORM
+In order to have the Avatar Web Service do something, you need to have something *call* the web service. You'll do this by adding a ScriptLink event on the form you're working with. In order to do this:
+1. Open the **Form Designer** form
+2. Choose the myAvatar™ form you want to use from the **Forms** dropdown
+3. Choose the form tab from the **Tabs** dropdown
+4. Click the **Show Tab** button
+
+You will now see the form tab in designer mode. In the upper left of myAvatar™ you will see a **Settings** button:
+
+![Form Designer settings](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/form-designer-settings-button.png)
+
+Clicking the **Settings** button will bring you to the ScriptLink options page:
+
+![Blank ScriptLink options](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-blank.png)
+
+The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import **button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
+
+For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` should display XML that looks something like this:
+
+![XML example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/xml-example.png)
+
+If you see the XML:
+1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar
+2. Click the **Import** button.
+
+You should get a popup letting you know the WSDL was imported successfully.
+
+Next we will need to choose an event that will call the Avatool Web Service, and determine the action that will take place. This will all be done on the ScriptLink options page:
+
+![ScriptLink options example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-example.png)
+
+Our example will use the **Pre-File** event
+1. Click the dropdown in the **Pre-File** row under the **Availble Scripts** column
+2. Choose **AvatoolWebService** (the *red* box)
+3. Type "VerifyInpatientAdmissionDate" in the **Pre-File** row under the **Script Parameter** column (the *purple* box)
+4. Uncheck the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes  (the *green* box)
+5. Click **Return to Designer** (the *yellow* box)
+
+
+
+
+
+
+
+
 
 # UPDATING
 
