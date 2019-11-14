@@ -168,7 +168,7 @@ What you can do, though, is check the **Disable All Scripts For Form** and **Dis
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/Avatool-Web-Service/tree/development).
 
-If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar.
+If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar.
 
 ### CONTRIBUTING
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
