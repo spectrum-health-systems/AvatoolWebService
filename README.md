@@ -1,7 +1,13 @@
-<!-- GRU-Readme v3.1.2.191025 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
-	 GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
+<!-- GRU-Readme v3.2.0.191114 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
+     GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
      an abundance of comments walking you through how to use each component.
 ---------------------------------------------------------------------------------------------------------------------->
+***
+### DOCUMENTATION IS NOT COMPLETE
+
+The Avatool Web Service v1.0 has been released, but I'm still working on updating/creating documentation. Just FYI.
+
+***
 
 <h2 align="center">
   Avatool Web Service
@@ -30,14 +36,13 @@
   ### CONTENTS
   [ABOUT THIS REPOSITORY](#about-this-repository)<br>
   [FEATURES](#features)<br>
-  [REQUIREMENTS](#requirments)<br>
+  [REQUIREMENTS](#requirements)<br>
   [BEFORE YOU BEGIN](#before-you-begin)<br>
   [GETTING STARTED](#getting-started)<br>
-  [INSTALLATION](#installation)<br>
+  [INSTALLING](#installing)<br>
   [USAGE](#usage)<br>
   [UPDATING](#updating)<br>
-  [UNINSTALL](#uninstall)<br>
-  [SUPPORT](#support)<br>
+  [UNINSTALLING](#uninstalling)<br>
   [DEVELOPMENT](#development)<br>
   [ADDENDUM](#addendum)
 
@@ -68,13 +73,17 @@ The Avatool Web Service is one such custom web service which includes various to
 # BEFORE YOU BEGIN
 There are a few things you should know before using the Avatool Web Service in your myAvatar™ environments.
 
-First, some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
+#### You will probably need to customize some stuff
+Some components of the Avatool Web Service will need to be customized before they can be used at your organization.
 
+These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
+
+#### You'll need a place to host the Avatool Web Service
 You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on setting up IIS for the Avatool Web Service [YMMV!](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10), if you decide to go that route.
 
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
-### SCRIPTLINK
+#### Let's talk about ScriptLink
 When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
 
 Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service.
@@ -91,7 +100,7 @@ If you are self-hosting the Avatool Web Service, you will need a web server that
 * Serves data via HTTPS
 * Includes the .NET 4.6 framework
 
-# INSTALLATION
+# INSTALLING
 The Avatool Web Service isn't *installed* so much as it is *published*.
 
 The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
@@ -151,7 +160,7 @@ Currently there is a single call in the Avatool Web Service:
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
 
-# UNINSTALL
+# UNINSTALLING
 Once you have imported a WSDL into myAvatar, it cannot be removed. There is no "uninstall".
 
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
@@ -159,31 +168,33 @@ What you can do, though, is check the **Disable All Scripts For Form** and **Dis
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/Avatool-Web-Service/tree/development).
 
-### Contributing
-If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
+If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar.
+
+### CONTRIBUTING
+If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
 
 # ADDENDUM 
-### Acknowledgements
+### ACKNOWLEDGEMENTS
 
 * All icons are from [Icons8](https://icons8.com)
 
-### Project resources
-* [Repository](https://github.com/APrettyCoolProgram/Avatool-Web-Service)
-* [Homepage](https://github.com/APrettyCoolProgram/Avatool-Web-Service)
-* [Changelog](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/CHANGELOG.md)
-* [Issues](https://github.com/APrettyCoolProgram/Avatool-Web-Service/issues)
-* [Pull requests](https://github.com/APrettyCoolProgram/Avatool-Web-Service/pulls)
-* [Project board](https://github.com/APrettyCoolProgram/Avatool-Web-Service/projects)
-* [Wiki](https://github.com/APrettyCoolProgram/Avatool-Web-Service/wiki)
-* [Security alerts](https://github.com/APrettyCoolProgram/Avatool-Web-Service/network/alerts)
-* [Insights](https://github.com/APrettyCoolProgram/Avatool-Web-Service/pulse)
-* [Code of conduct](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/CONTRIBUTING.md)
-* [License](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/LICENSE.md)
-* [Testing procedures](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
-* [Development notes](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/development-notes.md)
+### PROJECT RESOURCES
+* [Repository](https://github.com/spectrum-health-systems/Avatool-Web-Service)
+* [Homepage](https://github.com/spectrum-health-systems/Avatool-Web-Service)
+* [Changelog](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CHANGELOG.md)
+* [Issues](https://github.com/spectrum-health-systems/Avatool-Web-Service/issues)
+* [Pull requests](https://github.com/spectrum-health-systems/Avatool-Web-Service/pulls)
+* [Project board](https://github.com/spectrum-health-systems/Avatool-Web-Service/projects)
+* [Wiki](https://github.com/spectrum-health-systems/Avatool-Web-Service/wiki)
+* [Security alerts](https://github.com/spectrum-health-systems/Avatool-Web-Service/network/alerts)
+* [Insights](https://github.com/spectrum-health-systems/Avatool-Web-Service/pulse)
+* [Code of conduct](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CODE_OF_CONDUCT.md)
+* [Contributing](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CONTRIBUTING.md)
+* [License](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/LICENSE.md)
+* [Testing procedures](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
+* [Development notes](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/development-notes.md)
 
-### Related projects
+### RELATED PROJECTS
 * [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar EHR
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar solution using ScriptLink.
 
@@ -198,7 +209,3 @@ If you are interested in contributing to this project, please see the [contribut
   [![Built using](https://img.shields.io/badge/README%20built%20using-GRU%20README-17806D.svg)](https://github.com/APrettyCoolProgram/GRU--Readme)&nbsp;
 
 </div>
-
-
-
-If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Creating%20the%20Avatool%20Web%20Service.md). This will give you an empty Web Service that can be used with myAvatar.
