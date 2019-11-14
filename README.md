@@ -112,6 +112,7 @@ There are a variety of ways to use custom web services with myAvatar, the most c
 
 You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
 
+![Blank ScriptLink options](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-blank.png)
 
 # UPDATING
 
