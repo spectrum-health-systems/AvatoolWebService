@@ -1,6 +1,6 @@
 ﻿# CREATING THE AVATOOL WEB SERVICE
 
-## CONTENTS
+### CONTENTS
 [INTRODUCTION](#introduction)<br>
 [BEFORE YOU BEGIN](#before-you-begin)<br>
 [CREATING THE AVATOOL WEB SERVICE PROJECT](#creating-the-avatool-web-service-project)<br>

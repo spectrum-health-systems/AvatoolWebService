@@ -1,6 +1,6 @@
 # SETTING UP IIS v10 FOR THE AVATAR WEB SERVICE
 
-## CONTENTS
+### CONTENTS
 [INTRODUCTION](#introduction)<br>
 [BEFORE YOU BEGIN](#before-you-begin)<br>
 [SETTING UP IIS](#setting-up-iis)<br>

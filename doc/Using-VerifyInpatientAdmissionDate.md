@@ -1,6 +1,6 @@
 # AvatoolWebService.VerifyInpatientAdmissionDate()
 
-## CONTENTS
+### CONTENTS
 [INTRODUCTION](#introduction)<br>
 [BEFORE YOU BEGIN](#before-you-begin)<br>
 [HOW IT WORKS](#how-it-works)<br>
