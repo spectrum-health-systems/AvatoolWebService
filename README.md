@@ -51,7 +51,7 @@
 
 [myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR, developed by [Netsmart](https://www.ntst.com/), that offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
 
-But while myAvatar™ is a robust platform, like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), it isn't perfect.
+While myAvatar™ is a robust platform, like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), it isn't perfect.
 
 The good news is that myAvatar™ functionality can be extended via Netsmart's myAvatar™ Web Services, and/or custom web services that are written by myAvatar™ users.
 
@@ -66,29 +66,29 @@ The Avatool Web Service is one such custom web service which includes various to
 * Access to your myAvatar™ environments from the Avatool Web Service via HTTPS
 
 # BEFORE YOU BEGIN
-There are a few things you should know before using the Avatool Web Service in your myAvatar environments.
+There are a few things you should know before using the Avatool Web Service in your myAvatar™ environments.
 
 First, some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
-You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10) (YMMV!), if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on setting up IIS for the Avatool Web Service [YMMV!](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10), if you decide to go that route.
 
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
 ### SCRIPTLINK
 When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
 
-Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service. 
+Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service.
 
 As far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*.
 
-In my experience, ScriptLink is essentially a line of code in the form designer that kicks off the magical stuff you've written in a custom web service.
+In closing, in my experience, ScriptLink is essentially a line of code in the form designer that kicks off the magical stuff you've written in a custom web service.
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
 
 ### PRE-REQUISITES
 If you are self-hosting the Avatool Web Service, you will need a web server that:
-* Can serve data via HTTPS
+* Serves data via HTTPS
 * Includes the .NET 4.6 framework
 
 # INSTALLATION
@@ -119,7 +119,7 @@ Clicking the **Settings** button will bring you to the ScriptLink options page:
 
 ![Blank ScriptLink options](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-blank.png)
 
-The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import **button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
+The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import** button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
 
 For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` should display XML that looks something like this:
 
@@ -146,8 +146,7 @@ Our example will call the *VerifyInpatientAdmissionDate* action on the form's *P
 
 ### AVATOOL WEB SERVICE CALLS
 Currently there is a single call in the Avatool Web Service:
-* VerifyInpatientAdmissionDate
-
+* **VerifyInpatientAdmissionDate**, which verifies that a client's Pre-Admission Date is the same as the current date.
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
@@ -184,9 +183,6 @@ If you are interested in contributing to this project, please see the [contribut
 * [Testing procedures](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
 * [Development notes](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/development-notes.md)
 
-### Documentation
-### Built with
-### Used by
 ### Related projects
 * [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar EHR
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar solution using ScriptLink.
