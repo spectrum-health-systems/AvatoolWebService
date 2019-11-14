@@ -155,7 +155,7 @@ Our example will call the *VerifyInpatientAdmissionDate* action on the form's *P
 
 ### AVATOOL WEB SERVICE CALLS
 Currently there is a single call in the Avatool Web Service:
-* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md), which verifies that a client's Pre-Admission Date is the same as the current date.
+* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
