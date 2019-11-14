@@ -6,7 +6,7 @@
 <h2 align="center">
   Avatool Web Service
   <br>
-  <img src="https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/reporesources/image/Avatool-Web-Service-Logo.png" alt="Avatool Web Service" width="180">
+  <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/Avatool-Web-Service-Logo.png" alt="Avatool Web Service" width="180">
   <br>
   A custom Web Service for Netsmart's myAvatar EHR
   
@@ -18,10 +18,10 @@
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
-	![GitHub release](https://img.shields.io/github/release/aprettycoolprogram/Avatool-Web-Service?label=latest%20release)
+	![GitHub release](https://img.shields.io/github/release/spectrum-health-systems/Avatool-Web-Service?label=latest%20release)
 	![MadeFor](https://img.shields.io/badge/made_for-myavatar-blue.svg)
 	![MadeWith](https://img.shields.io/badge/made_with-C%23-blue.svg)
-	[![License](https://img.shields.io/github/license/APrettyCoolProgram/GRU-Readme)](https://www.apache.org/licenses/LICENSE-2.0)
+	[![License](https://img.shields.io/github/license/spectrum-health-systems/Avatool-Web-Service)](https://www.apache.org/licenses/LICENSE-2.0)
 
 </div>
 
@@ -52,27 +52,28 @@
 </h5>
 
 # ABOUT THIS REPOSITORY
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/aprettycoolprogram/GRU-README/master)
-![GitHub issues](https://img.shields.io/github/issues/APrettyCoolProgram/GRU-Readme)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/aprettycoolprogram/GRU-README)
-[![GitHub contributors](https://img.shields.io/github/contributors/aprettycoolprogram/GRU-Readme)](https://github.com/aprettycoolprogram/GRU-Readme/graphs/contributors/)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/spectrum-health-systems/Avatool-Web-Service/master)
+![GitHub issues](https://img.shields.io/github/issues/spectrum-health-systems/Avatool-Web-Service/)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/spectrum-health-systems/Avatool-Web-Service/)
+[![GitHub contributors](https://img.shields.io/github/contributors/spectrum-health-systems/Avatool-Web-Service/)](https://github.com/spectrum-health-systems/Avatool-Web-Service//graphs/contributors/)
 
-The Avatool Web Service provides useful functionality for Netsmart's myAvatar EHR.
+The Avatool Web Service includes various tools and utilities for Netsmart's myAvatar EHR that aren't built into the official release, as provides a solid foundation for building custom functionality quickly and efficiently.
 
 # FEATURES
-* Scheduled appointment duration check
-* Inpatient admission date check
+* Several tools and utilities for use with myAvatar
+* A solid foundation to build custom tools and utilities
 
 # REQUIREMENTS
-* A location to host the Avatool Web Service
+* A location to host the Avatool Web Service via HTTPS
 * Access to your myAvatar LIVE environment from the Avatool Web Service
+* Familiarity with the C# programming language
 
 # BEFORE YOU BEGIN
-You'll need a location to host the Avatool Web Service.
+There are a few things you should know before using the Avatool Web Service in your myAvatar environments.
 
-You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?).
+First, some components will need to be customized before they can be used at your organization.
 
-In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took [notes on setting up IIS for the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Notes%20on%20setting%20up%20IIS%20for%20the%20Avatool%20Web%20Service.pdf), if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?). In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took [notes on setting up IIS for the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Notes%20on%20setting%20up%20IIS%20for%20the%20Avatool%20Web%20Service.pdf), if you decide to go that route.
 
 If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Creating%20the%20Avatool%20Web%20Service.md). This will give you an empty Web Service that can be used with myAvatar.
 
