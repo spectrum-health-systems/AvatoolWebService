@@ -8,7 +8,7 @@
 [ADDING THE NETSMART SCRIPTLINK SERVICE TO THE PROJECT](#adding-the-netsmart-scriptLink-service-to-the-project)<br>
 [ADDING REQUIRED METHODS](#adding-required-methods)<br>
 [CLEANUP](#cleanup)<br>
-[ADDITIONAL READING](#aditional-reading)<br>
+[ADDITIONAL READING](#additional-reading)<br>
 
 ## INTRODUCTION
 If you are curious as to how the Avatool Web Service was created, or you are looking for some information on creating your own custom web service for myAvatar, these are the steps I took.
