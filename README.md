@@ -53,9 +53,9 @@
 
 # ABOUT THIS REPOSITORY
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/spectrum-health-systems/Avatool-Web-Service/master)
-![GitHub issues](https://img.shields.io/github/issues/spectrum-health-systems/Avatool-Web-Service/)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/spectrum-health-systems/Avatool-Web-Service/)
-[![GitHub contributors](https://img.shields.io/github/contributors/spectrum-health-systems/Avatool-Web-Service/)](https://github.com/spectrum-health-systems/Avatool-Web-Service//graphs/contributors/)
+![GitHub issues](https://img.shields.io/github/issues/spectrum-health-systems/Avatool-Web-Service)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/spectrum-health-systems/Avatool-Web-Service)
+[![GitHub contributors](https://img.shields.io/github/contributors/spectrum-health-systems/Avatool-Web-Service/)](https://github.com/spectrum-health-systems/Avatool-Web-Service//graphs/contributors)
 
 The Avatool Web Service includes various tools and utilities for Netsmart's myAvatar EHR that aren't built into the official release, as provides a solid foundation for building custom functionality quickly and efficiently.
 
