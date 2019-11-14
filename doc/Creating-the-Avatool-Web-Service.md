@@ -1,23 +1,24 @@
 ﻿# CREATING THE AVATOOL WEB SERVICE
 
 #### CONTENTS
-[Introduction](#introduction)<br>
-[Before you begin](#before-you-begin)<br>
-[Creating the Avatool Web Service Project](#creating-the-avatool-web-service-project)<br>
-[Adding a new Web Service to the project](#adding-a-new-web-service-to-the-project)<br>
-[Adding the Netsmart ScriptLink Service to the project](#adding-the-netsmart-scriptLink-service-to-the-project)<br>
-[Adding required methods](#adding-required-methods)<br>
-[Cleanup](#cleanup)<br>
-[Additional reading](#aditional-reading)<br>
+[INTRODUCTION](#introduction)<br>
+[BEFORE YOU BEGIN](#before-you-begin)<br>
+[CREATING THE AVATOOL WEB SERVICE PROJECT](#creating-the-avatool-web-service-project)<br>
+[ADDING A NEW WEB SERVICE TO THE PROJECT](#adding-a-new-web-service-to-the-project)<br>
+[ADDING THE NETSMART SCRIPTLINK SERVICE TO THE PROJECT](#adding-the-netsmart-scriptLink-service-to-the-project)<br>
+[ADDING REQUIRED METHODS](#adding-required-methods)<br>
+[CLEANUP](#cleanup)<br>
+[ADDITIONAL READING](#aditional-reading)<br>
 
 ## INTRODUCTION
-These are the steps I took to create the foundation of the Avatool Web Service, using Visual Studio 2019 Community v16.3.6.
-
-Since SOAP is not supported in .NET Core, the Avatool Web Service will use the .NET Framework 4.6.
-
-The Avatool Web Service is developed using C#.
+If you are curious as to how the Avatool Web Service was created, or you are looking for some information on creating your own custom web service for myAvatar, these are the steps I took.
 
 ## BEFORE YOU BEGIN
+To create the Avatool Web Service, I used:
+* Visual Studio 2019 Community version 16.3.6.
+* .NET Framework 4.6, since SOAP is not supported in .NET Core
+* C#
+
 If you want to skip the steps below, you can download the [Avatool Web Service v0 project](https://github.com/APrettyCoolProgram/Avatool-Web-Service/releases/tag/v0.0.0.0), which was built using this document.
 
 ## CREATING THE AVATOOL WEB SERVICE PROJECT
