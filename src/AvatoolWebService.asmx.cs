@@ -1,6 +1,6 @@
 ﻿// ===========================================================================================================  3:01 PM
 //    FILENAME: AvatoolWebService.asmx.cs
-//       BUILD: 20191113
+//       BUILD: 20191114
 //     PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
 //     AUTHORS: development@aprettycoolprogram.com
 //   COPYRIGHT: Copyright 2019 A Pretty Cool Program
@@ -9,7 +9,6 @@
 
 /* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
  */
-
 using NTST.ScriptLinkService.Objects;
 using System;
 using System.ComponentModel;
@@ -41,7 +40,7 @@ namespace Avatool_Web_Service
         }
 
         /// <summary>
-        /// Performs an Avatool Web Service action.
+        /// Performs an Avatool Web Service "action".
         /// </summary>
         /// <param name="sentOptionObject">The OptionObject2 object from myAvatar.</param>
         /// <param name="action">The action you want the Web Service to perform.</param>
