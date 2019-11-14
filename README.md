@@ -68,15 +68,17 @@ The Avatool Web Service is one such custom web service which includes various to
 # BEFORE YOU BEGIN
 There are a few things you should know before using the Avatool Web Service in your myAvatar™ environments.
 
-#### SOME CUSTOMIZATION IS NECESSARY
-Some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
+#### Some customization is necessary
+Some components of the Avatool Web Service will need to be customized before they can be used at your organization.
 
-#### HOSTING THE AVATOOL WEB SERVICE
+These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
+
+#### You'll need a place to host the Avatool Web Service
 You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on setting up IIS for the Avatool Web Service [YMMV!](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10), if you decide to go that route.
 
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
-#### DEFINING SCRIPTLINK
+#### Defining what ScriptLink really is
 When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
 
 Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service.
