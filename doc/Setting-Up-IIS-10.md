@@ -28,14 +28,14 @@ I’ve named the application pool *AvatoolWebService*.
 
 This is what my application pool setup looks like:
 
-![Application Pool example]()
+![Application Pool example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/application-pool-example.png)
 
 Again, I’m sure that all of these are not necessary, nor do all of the application pools need to be started.
 
 ### CREATE A NEW SITE
 Right-click the **Sites** connection, and choose **Add Website…**.
 
-![Application Pool example]()
+![New Site example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/new-site-example.png)
 
 Complete the following fields:
 * Site name: *AvatoolWebService*
@@ -54,16 +54,16 @@ ASP.NET is required by Web Services, so add the ASP.NET role to IIS.
 
 Once that’s done, your IIS roles should look like this:
 
-![Roles example]()
+![Roles example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/roles-example.png)
 
 And your AvatoolWebService site should look like this:
 
-![Home example]()
+![Home example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/home-example.png)
 
 ### ENABLE DIRECTORY BROWSING
 Double-click on the **Directory Browsing** icon
 
-![Directory Browsing example]()
+![Directory Browsing example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/directory-browsing-example.png)
 
 Choose **Enable**, then **Apply**.
 
