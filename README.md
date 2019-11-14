@@ -148,15 +148,9 @@ Our example will use the **Pre-File** event
 2. Choose **AvatoolWebService** (the *red* box)
 3. Type "VerifyInpatientAdmissionDate" in the **Pre-File** row under the **Script Parameter** column (the *purple* box)
 4. Uncheck the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes  (the *green* box)
-5. Click **Return to Designer** (the *yellow* box)
-
-
-
-
-
-
-
-
+5. Click **Return to Designer** (the *yellow* box), and the ScriptLink options page will close, and you will be back on the **Tab Designer** page.
+6. Click the **Save** button, and you bw returned to the **Form Designer** page.
+7. Click **Submit**
 
 # UPDATING
 
