@@ -79,7 +79,7 @@ Some components of the Avatool Web Service will need to be customized before the
 These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
 #### You'll need a place to host the Avatool Web Service
-You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on [setting up IIS](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10) (YMMV!) for the Avatool Web Service, if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on [setting up IIS](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10.md) (YMMV!) for the Avatool Web Service, if you decide to go that route.
 
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
@@ -155,7 +155,7 @@ Our example will call the *VerifyInpatientAdmissionDate* action on the form's *P
 
 ### AVATOOL WEB SERVICE CALLS
 Currently there is a single call in the Avatool Web Service:
-* **VerifyInpatientAdmissionDate**, which verifies that a client's Pre-Admission Date is the same as the current date.
+* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.

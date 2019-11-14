@@ -1,21 +1,11 @@
 # AvatoolWebService.VerifyInpatientAdmissionDate()
 
-## CONTENTS
+### CONTENTS
 [INTRODUCTION](#introduction)<br>
 [BEFORE YOU BEGIN](#before-you-begin)<br>
 [HOW IT WORKS](#how-it-works)<br>
 [INSTALLATION](#installation)<br>
 [CONFIGURATION](#configuration)<br>
-[USAGE](#usage)<br>
-[UPDATING](#updating)<br>
-[UNINSTALLING](#uninstalling)<br>
-[DEMO](#demo)<br>
-
-[API](#api)<br>
-[FAQ](#faq)<br>
-[SUPPORT](#support)<br>
-[DEVELOPMENT](#development)<br>
-[ADDENDUM](#addendum)
 
 ## INTRODUCTION
 When an Admission form is submitted, The Avatool Web Service *VerifyInpatientAdmissionDate* call compares a client Pre-Admission date with the system (current) date.
