@@ -1,6 +1,6 @@
 ﻿# CREATING THE AVATOOL WEB SERVICE
 
-#### CONTENTS
+## CONTENTS
 [INTRODUCTION](#introduction)<br>
 [BEFORE YOU BEGIN](#before-you-begin)<br>
 [CREATING THE AVATOOL WEB SERVICE PROJECT](#creating-the-avatool-web-service-project)<br>
@@ -19,10 +19,10 @@ To create the Avatool Web Service, I used:
 * .NET Framework 4.6, since SOAP is not supported in .NET Core
 * C#
 
-If you want to skip the steps below, you can download the [Avatool Web Service v0 project](https://github.com/APrettyCoolProgram/Avatool-Web-Service/releases/tag/v0.0.0.0), which was built using this document.
+If you want to skip the steps below, you can download the [Avatool Web Service v0.0 project](https://github.com/APrettyCoolProgram/Avatool-Web-Service/releases/tag/v0.0.0.0), which was built using this document.
 
 ## CREATING THE AVATOOL WEB SERVICE PROJECT
-First, we need to create an empty ASP.NET Web Application project.
+First, we need to create an empty ASP.NET Web Application project. Using Visual Studio 2019:
 
 1. Go to **File** > **New** > **Project...**
 2. Select **ASP.NET Web Application (.NET Framework)**
@@ -51,6 +51,7 @@ So let's add a Web Service to the Avatool Web Service project.
 ## ADDING THE NETSMART SCRIPTLINK SERVICE
 In order for our new AvatoolWebService Web Service to work, we'll need to add the Netsmart ScriptLink Service to our project. The Netsmart ScriptLink Service can be found in the Applicaition Exchange on the Netsmart Cares portal.
 
+### OBTAINING THE NETSMART SCRIPTLINK SERVICE
 1. Login to the *Netsmart Cares portal*
 2. Go to the *Application Exchange* by choosing **Community** > **App Exchange**
 3. Under **Quick Links** choose **Avatar ScriptLink Library**
@@ -63,7 +64,7 @@ As of November 2019, the "Brief ScriptLink Tutorial with OptionObject2" was seve
 
 The downloaded file is a .zip archive, which you'll need to extract. Once extracted:
 
-5. Copy this folder to the root of the Avatool Web Service project:
+1. Copy the extracted folder to the root of the Avatool Web Service project:
    ```
    136_180_9_ScriptLinkTutorialWithOptionObject2/ScriptLinkTutorialWithOptionObject2/DotNetCode/ScriptLinkServiceComplete/NTST.ScriptLinkService.Objects/
    ``` 
@@ -79,7 +80,7 @@ When complete, the folder structure of the Avatool Web Service project should lo
     /AvatoolWebService.asmx.cs
     ...
 ```
-
+### ADDING A REFERENCE TO THE NETSMART SCRIPTLINK SERVICE
 Now we need to add a reference to the Netsmart ScriptLink Service to our project.
 
 1. Right-click the **Avatool-Web-Service** solution and choose **Add** > **Existing Project..**
@@ -195,8 +196,3 @@ namespace Avatool_Web_Service
 ```
 # CLEANUP
 Prior to starting development, I spent some time adding headers to files, creating various development files (i.e. changelogs, roadmaps).
-
-# ADDITIONAL READING
-The Avatool Web Service project has been created, and is ready to be developed!
-
-I would recommend reading the [Avatool Web Service Development]() document.
