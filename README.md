@@ -1,4 +1,4 @@
-<!-- GRU-Readme v3.1.2.191025 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
+<!-- GRU-Readme v3.2.0.191114 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
 	 GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
      an abundance of comments walking you through how to use each component.
 ---------------------------------------------------------------------------------------------------------------------->
@@ -30,13 +30,13 @@
   ### CONTENTS
   [ABOUT THIS REPOSITORY](#about-this-repository)<br>
   [FEATURES](#features)<br>
-  [REQUIREMENTS](#requirments)<br>
+  [REQUIREMENTS](#requirements)<br>
   [BEFORE YOU BEGIN](#before-you-begin)<br>
   [GETTING STARTED](#getting-started)<br>
-  [INSTALLATION](#installation)<br>
+  [INSTALLING](#installing)<br>
   [USAGE](#usage)<br>
   [UPDATING](#updating)<br>
-  [UNINSTALL](#uninstall)<br>
+  [UNINSTALLING](#uninstalling)<br>
   [SUPPORT](#support)<br>
   [DEVELOPMENT](#development)<br>
   [ADDENDUM](#addendum)
@@ -95,7 +95,7 @@ If you are self-hosting the Avatool Web Service, you will need a web server that
 * Serves data via HTTPS
 * Includes the .NET 4.6 framework
 
-# INSTALLATION
+# INSTALLING
 The Avatool Web Service isn't *installed* so much as it is *published*.
 
 The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
@@ -155,7 +155,7 @@ Currently there is a single call in the Avatool Web Service:
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
 
-# UNINSTALL
+# UNINSTALLING
 Once you have imported a WSDL into myAvatar, it cannot be removed. There is no "uninstall".
 
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
@@ -165,15 +165,15 @@ The project is currently being developed by A Pretty Cool Program. If your inter
 
 If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar.
 
-### Contributing
+### CONTRIBUTING
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
 
 # ADDENDUM 
-### Acknowledgements
+### ACKNOWLEDGEMENTS
 
 * All icons are from [Icons8](https://icons8.com)
 
-### Project resources
+#### Project resources
 * [Repository](https://github.com/spectrum-health-systems/Avatool-Web-Service)
 * [Homepage](https://github.com/spectrum-health-systems/Avatool-Web-Service)
 * [Changelog](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CHANGELOG.md)
@@ -189,7 +189,7 @@ If you are interested in contributing to this project, please see the [contribut
 * [Testing procedures](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
 * [Development notes](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/development-notes.md)
 
-### Related projects
+#### Related projects
 * [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar EHR
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar solution using ScriptLink.
 
