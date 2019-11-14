@@ -83,9 +83,9 @@ You'll also need a location to host the Avatool Web Service. In our environment,
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
 ### SCRIPTLINK
-When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
+When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers. Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. SCriptLink isn't a web service. 
 
-The bottom line is, as far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*. Netsmart makes ScriptLink out to be something bigger, or maybe a framework, or an actuall web service...but my experience is ScriptLink is essentially a line of code in form designer that kicks off the magical stuff you've written in a custom web service.
+As far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*. In my experience, ScriptLink is essentially a line of code in the form designer that kicks off the magical stuff you've written in a custom web service.
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
@@ -101,15 +101,10 @@ The Avatool Web Service isn't *installed* so much as it is *published*.
 The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
 
 # USAGE
-### WHAT IS SCRIPTLINK
-
-
-
-
 There are a variety of ways to use custom web services with myAvatar, the most common being:
-* when a form loads
-* after the submit button is clicked, but prior to filing the form
-* after the submit button is clicked and the form has been filed
+* when a form loads ("Form Load")
+* after the submit button is clicked, but prior to filing the form ("Pre-File")
+* after the submit button is clicked and the form has been filed ("Post-File")
 
 You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
 
