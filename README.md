@@ -1,7 +1,13 @@
 <!-- GRU-Readme v3.2.0.191114 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
-	 GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
+     GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
      an abundance of comments walking you through how to use each component.
 ---------------------------------------------------------------------------------------------------------------------->
+***
+### DOCUMENTATION IS NOT COMPLETE
+
+The Avatool Web Service v1.0 has been released, but I'm still working on updating/creating documentation. Just FYI.
+
+***
 
 <h2 align="center">
   Avatool Web Service
@@ -37,7 +43,6 @@
   [USAGE](#usage)<br>
   [UPDATING](#updating)<br>
   [UNINSTALLING](#uninstalling)<br>
-  [SUPPORT](#support)<br>
   [DEVELOPMENT](#development)<br>
   [ADDENDUM](#addendum)
 
@@ -173,7 +178,7 @@ If you are interested in contributing to this project, please see the [contribut
 
 * All icons are from [Icons8](https://icons8.com)
 
-#### Project resources
+### PROJECT RESOURCES
 * [Repository](https://github.com/spectrum-health-systems/Avatool-Web-Service)
 * [Homepage](https://github.com/spectrum-health-systems/Avatool-Web-Service)
 * [Changelog](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CHANGELOG.md)
@@ -189,7 +194,7 @@ If you are interested in contributing to this project, please see the [contribut
 * [Testing procedures](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
 * [Development notes](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/development-notes.md)
 
-#### Related projects
+### RELATED PROJECTS
 * [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar EHR
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar solution using ScriptLink.
 
