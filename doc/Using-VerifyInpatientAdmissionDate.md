@@ -1,4 +1,4 @@
-# USING THE AVATOOL WEB SERVICE VerifyInpatientAdmissionDate CALL
+# THE AVATOOL WEB SERVICE VerifyInpatientAdmissionDate CALL
 
 ## CONTENTS
 [INTRODUCTION](#introduction)<br>
