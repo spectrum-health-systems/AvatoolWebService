@@ -57,7 +57,13 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/spectrum-health-systems/Avatool-Web-Service)
 [![GitHub contributors](https://img.shields.io/github/contributors/spectrum-health-systems/Avatool-Web-Service)](https://github.com/spectrum-health-systems/Avatool-Web-Service//graphs/contributors)
 
-The Avatool Web Service includes various tools and utilities for Netsmart's myAvatar EHR that aren't built into the official release, as provides a solid foundation for building custom functionality quickly and efficiently.
+[myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR, developed by [Netsmart](https://www.ntst.com/), that offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
+
+But while myAvatar™ is a robust platform, it isn't perfect. Then again - aside from [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition) - what is?
+
+The good news is that myAvatar™ functionality can be extended via Netsmart's myAvatar™ Web Services, and/or custom web services that are written by myAvatar™ users.
+
+The Avatool Web Service is one such custom web service which includes various tools and utilities for myAvatar™ that aren't built into the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
 
 # FEATURES
 * Several tools and utilities for use with myAvatar
