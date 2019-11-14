@@ -31,20 +31,12 @@
   [ABOUT THIS REPOSITORY](#about-this-repository)<br>
   [FEATURES](#features)<br>
   [REQUIREMENTS](#requirments)<br>
-  [EXAMPLE](#example)<br>
   [BEFORE YOU BEGIN](#before-you-begin)<br>
   [GETTING STARTED](#getting-started)<br>
   [INSTALLATION](#installation)<br>
-  [BUILD PROCESS](#build-process)<br>
-  [SETUP](#setup)<br>
-  [CONFIGURATION](#configuration)<br>
   [USAGE](#usage)<br>
   [UPDATING](#updating)<br>
   [UNINSTALL](#uninstall)<br>
-  [DEMO](#demo)<br>
-  [HOW IT WORKS](#how-it-works)<br>
-  [API](#api)<br>
-  [FAQ](#faq)<br>
   [SUPPORT](#support)<br>
   [DEVELOPMENT](#development)<br>
   [ADDENDUM](#addendum)
@@ -105,14 +97,14 @@ The Avatool Web Service isn't *installed* so much as it is *published*.
 The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
 
 # USAGE
-There are a variety of ways to use custom web services with myAvatar, the most common being:
-* when a form loads ("Form Load")
+To use the Avatool Web Service with myAvatar, you will need to add a ScriptLink event to one of the following events on a form:
+* when the form loads ("Form Load")
 * after the submit button is clicked, but prior to filing the form ("Pre-File")
 * after the submit button is clicked and the form has been filed ("Post-File")
 
 You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
 
-### ADDING A SCRIPT LINK TO A FORM
+### ADDING A SCRIPT LINK EVENT TO A FORM
 In order to have the Avatar Web Service do something, you need to have something *call* the web service. You'll do this by adding a ScriptLink event on the form you're working with. In order to do this:
 1. Open the **Form Designer** form
 2. Choose the myAvatar™ form you want to use from the **Forms** dropdown
@@ -143,7 +135,7 @@ Next we will need to choose an event that will call the Avatool Web Service, and
 
 ![ScriptLink options example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-example.png)
 
-Our example will use the **Pre-File** event
+Our example will call the *VerifyInpatientAdmissionDate* action on the form's *Pre-File* event:
 1. Click the dropdown in the **Pre-File** row under the **Availble Scripts** column
 2. Choose **AvatoolWebService** (the *red* box)
 3. Type "VerifyInpatientAdmissionDate" in the **Pre-File** row under the **Script Parameter** column (the *purple* box)
@@ -151,6 +143,11 @@ Our example will use the **Pre-File** event
 5. Click **Return to Designer** (the *yellow* box), and the ScriptLink options page will close, and you will be back on the **Tab Designer** page
 6. Click the **Save** button, and you bw returned to the **Form Designer** page
 7. Click **Submit**
+
+### AVATOOL WEB SERVICE CALLS
+Currently there is a single call in the Avatool Web Service:
+* VerifyInpatientAdmissionDate
+
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
@@ -160,14 +157,8 @@ Once you have imported a WSDL into myAvatar, it cannot be removed. There is no "
 
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
 
-# API
-
-# HOW IT WORKS
-
-# FAQ
-
 # DEVELOPMENT
-The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/APrettyCoolProgram/Avatool-Web-Service/tree/development).
+The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/Avatool-Web-Service/tree/development).
 
 ### Contributing
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
