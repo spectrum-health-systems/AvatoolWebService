@@ -63,25 +63,22 @@ But while myAvatar™ is a robust platform, like most things in life (except [He
 
 The good news is that myAvatar™ functionality can be extended via Netsmart's myAvatar™ Web Services, and/or custom web services that are written by myAvatar™ users.
 
-The Avatool Web Service is one such custom web service which includes various tools and utilities for myAvatar™ that aren't built into the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
+The Avatool Web Service is one such custom web service which includes various tools and utilities for myAvatar™ that aren't included in the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
 
 # FEATURES
-* Several tools and utilities for use with myAvatar
-* A solid foundation to build custom tools and utilities
+* Several built-in tools and utilities for use with myAvatar™
+* A solid foundation to build additional custom tools and utilities
 
 # REQUIREMENTS
 * A location to host the Avatool Web Service via HTTPS
-* Access to your myAvatar LIVE environment from the Avatool Web Service
-* Familiarity with the C# programming language
+* Access to your myAvatar™ environments from the Avatool Web Service
 
 # BEFORE YOU BEGIN
 There are a few things you should know before using the Avatool Web Service in your myAvatar environments.
 
-First, some components will need to be customized before they can be used at your organization.
+First, some components of the Avatool Web Service will need to be customized before they can be used at your organization. These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
-You'll also need a location to host the Avatool Web Service. You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?). In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took [notes on setting up IIS for the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Notes%20on%20setting%20up%20IIS%20for%20the%20Avatool%20Web%20Service.pdf), if you decide to go that route.
-
-If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Creating%20the%20Avatool%20Web%20Service.md). This will give you an empty Web Service that can be used with myAvatar.
+You'll also need a location to host the Avatool Web Service. You can pay Netsmart to host your custom Web Services (easier?), or use a web server of your choice (harder?). In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some [notes on setting up IIS for the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10)(YMMV), if you decide to go that route.
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
@@ -150,3 +147,7 @@ If you are interested in contributing to this project, please see the [contribut
   [![Built using](https://img.shields.io/badge/README%20built%20using-GRU%20README-17806D.svg)](https://github.com/APrettyCoolProgram/GRU--Readme)&nbsp;
 
 </div>
+
+
+
+If you would rather start with a completely blank Web Service project for Visual Studio, you can follow the instructions for [creating the Avatool Web Service](https://github.com/APrettyCoolProgram/Avatool-Web-Service/blob/master/doc/Creating%20the%20Avatool%20Web%20Service.md). This will give you an empty Web Service that can be used with myAvatar.
