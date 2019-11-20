@@ -1,11 +1,15 @@
 ﻿// ===========================================================================================================  3:28 PM
 //    FILENAME: AvatoolWebService.VerifyInpatientAdmissionDate.cs
-//       BUILD: 20191114
-//     PROJECT: Avatool-Web-Service (https://github.com/APrettyCoolProgram/Avatool-Web-Service)
+//       BUILD: 20191120
+//     PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
 //     AUTHORS: development@aprettycoolprogram.com
 //   COPYRIGHT: Copyright 2019 A Pretty Cool Program
 //     LICENSE: Apache License, Version 2.0
 // ====================================================================================================================
+
+/* Detailed documentation for VerifyInpatientAdmissionDate() can be found here:
+ *   https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md
+ */
 
 using NTST.ScriptLinkService.Objects;
 using System;
@@ -14,42 +18,33 @@ namespace Avatool_Web_Service
 {
     public partial class AvatoolWebService
     {
-        /// <summary>
-        /// Verify that the Inpatient Admission Date is the same as the system date.
-        /// </summary>
-        /// <param name="sentOptionObject">The sent OptionObject</param>
-        /// <returns>A completed OptionObject.</returns>
-        public static OptionObject2 VerifyInpatientAdmissionDate(OptionObject2 sentOptionObject)
+        /// <summary> Verify that the Inpatient Admission Date is the same as the system date.</summary>
+        /// <param name="optionObjectFromMyAvatar">The OptionObject2 object from myAvatar.</param>
+        /// <returns>A completed OptionObject with the VerifyInpatientAdmissionDate information.</returns>
+        public static OptionObject2 VerifyInpatientAdmissionDate(OptionObject2 optionObjectFromMyAvatar)
         {
-            /* Documentation for VerifyInpatientAdmissionDate() can be found here:
-             *   https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md
-             */
-
-            /* You will need to modify these values to match the fieldIDs for your organization. See the
-             * VerifyInpatientAdmissionDate() documentation for details
-             */
-            const string typeOfAdmissionFieldId         = "44";
-            const string preAdmitToAdmissionDateFieldId = "42";
-            const int    preAdmissionId                 = 3;
+            ///* You will need to modify these values to match the fieldIDs for your organization. See the
+            // * VerifyInpatientAdmissionDate() documentation for details
+            // */
+            //const string typeOfAdmissionFieldId         = "44";
+            //const string preAdmitToAdmissionDateFieldId = "42";
+            //const int    preAdmissionId                 = 3;
+            var admissionDateDetails = new AdmissionDateDetails();
 
             var typeOfAdmission         = 0;
             var preAdmitToAdmissionDate = new DateTime(1900, 1, 1);
 
-            foreach (var form in sentOptionObject.Forms)
+            foreach (var form in optionObjectFromMyAvatar.Forms)
             {
                 foreach (var field in form.CurrentRow.Fields)
                 {
-                    switch (field.FieldNumber)
+                    if (field.FieldNumber == admissionDateDetails.TypeOfAdmissionFieldId)
                     {
-                        case typeOfAdmissionFieldId:
-                            typeOfAdmission = int.Parse(field.FieldValue); // TODO Convert.ToInt()?
-
-                            break;
-
-                        case preAdmitToAdmissionDateFieldId:
-                            preAdmitToAdmissionDate = Convert.ToDateTime(field.FieldValue);
-
-                            break;
+                        typeOfAdmission = int.Parse(field.FieldValue);
+                    }
+                    else if (field.FieldNumber == admissionDateDetails.PreAdmitToAdmissionDateFieldId)
+                    {
+                        preAdmitToAdmissionDate = Convert.ToDateTime(field.FieldValue);
                     }
                 }
             }
@@ -58,7 +53,7 @@ namespace Avatool_Web_Service
             var errorMessageBody = string.Empty;
             var errorMessageCode = 0;
 
-            if (typeOfAdmission == preAdmissionId)
+            if (typeOfAdmission == admissionDateDetails.PreAdmissionId)
             {
                 if (preAdmitToAdmissionDate != systemDate)
                 {
@@ -91,7 +86,10 @@ namespace Avatool_Web_Service
             //    returnOptionObject.ErrorMesg = "[OUT OF BOUNDS ERROR]\nType of admission: " + typeOfAdmission + "\n" + "Date: " + preAdmitToAdmissionDate;
             //}
 
-            return CompleteOptionObject(sentOptionObject, returnOptionObject, true, false);
+            return CompleteOptionObject(optionObjectFromMyAvatar, returnOptionObject, true, false);
         }
+
+
+
     }
 }
