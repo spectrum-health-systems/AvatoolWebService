@@ -12,10 +12,10 @@ The Avatool Web Service v1.0 has been released, but I'm still working on updatin
 <h2 align="center">
   Avatool Web Service
   <br>
-  <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/Avatool-Web-Service-Logo.png" alt="Avatool Web Service" width="180">
+  <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="180">
   <br>
   A custom Web Service for Netsmart's myAvatar EHR
-  
+
   <br>
   <br>
 </h2>
@@ -173,7 +173,7 @@ If you would rather start with a completely blank Avatool Web Service, or you wa
 ### CONTRIBUTING
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
 
-# ADDENDUM 
+# ADDENDUM
 ### ACKNOWLEDGEMENTS
 
 * All icons are from [Icons8](https://icons8.com)
