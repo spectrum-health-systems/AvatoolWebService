@@ -7,7 +7,7 @@
   <br>
   <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="180">
   <br>
-  A custom Web Service for Netsmart's myAvatar™ EHR
+  A custom Web service for Netsmart's myAvatar™ EHR
 
   <br>
   <br>
@@ -67,7 +67,7 @@ Some components of the Avatool Web Service will need to be customized before the
 These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
 
 #### You'll need a place to host the Avatool Web Service
-You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. I took some notes on [setting up IIS](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Setting-Up-IIS-10.md) (YMMV!) for the Avatool Web Service, if you decide to go that route.
+You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS v10. I took some notes on [setting up IIS](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/setting-up-iis.md) (YMMV!) for the Avatool Web Service, if you decide to go that route.
 
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
@@ -110,17 +110,17 @@ In order to have the Avatar Web Service do something, you need to have something
 
 You will now see the form tab in designer mode. In the upper left of myAvatar™ you will see a **Settings** button:
 
-![Form Designer settings](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/form-designer-settings-button.png)
+![Form Designer settings](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/form-designer-settings-button.png)
 
 Clicking the **Settings** button will bring you to the ScriptLink options page:
 
-![Blank ScriptLink options](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-blank.png)
+![Blank ScriptLink options](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-blank.png)
 
 The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import** button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
 
 For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` should display XML that looks something like this:
 
-![XML example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/xml-example.png)
+![XML example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/xml-example.png)
 
 If you see the XML:
 1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar™
@@ -130,7 +130,7 @@ You should get a popup letting you know the WSDL was imported successfully.
 
 Next we will need to choose an event that will call the Avatool Web Service, and determine the action that will take place. This will all be done on the ScriptLink options page:
 
-![ScriptLink options example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/scriptlink-example.png)
+![ScriptLink options example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-example.png)
 
 Our example will call the *VerifyInpatientAdmissionDate* action on the form's *Pre-File* event:
 1. Click the dropdown in the **Pre-File** row under the **Availble Scripts** column
@@ -143,7 +143,7 @@ Our example will call the *VerifyInpatientAdmissionDate* action on the form's *P
 
 ### AVATOOL WEB SERVICE CALLS
 Currently there is a single call in the Avatool Web Service:
-* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
+* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
@@ -154,12 +154,12 @@ Once you have imported a WSDL into myAvatar™, it cannot be removed. There is n
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
 
 # DEVELOPMENT
-The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/Avatool-Web-Service/tree/development).
+The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/AvatoolWebService/tree/development).
 
-If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar™.
+If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar™.
 
 ### CONTRIBUTING
-If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
+If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
 
 # ADDENDUM
 ### ACKNOWLEDGEMENTS
@@ -167,23 +167,22 @@ If you are interested in contributing to this project, please see the [contribut
 * All icons are from [Icons8](https://icons8.com)
 
 ### PROJECT RESOURCES
-* [Repository](https://github.com/spectrum-health-systems/Avatool-Web-Service)
-* [Homepage](https://github.com/spectrum-health-systems/Avatool-Web-Service)
-* [Changelog](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CHANGELOG.md)
-* [Issues](https://github.com/spectrum-health-systems/Avatool-Web-Service/issues)
-* [Pull requests](https://github.com/spectrum-health-systems/Avatool-Web-Service/pulls)
-* [Project board](https://github.com/spectrum-health-systems/Avatool-Web-Service/projects)
-* [Wiki](https://github.com/spectrum-health-systems/Avatool-Web-Service/wiki)
-* [Security alerts](https://github.com/spectrum-health-systems/Avatool-Web-Service/network/alerts)
-* [Insights](https://github.com/spectrum-health-systems/Avatool-Web-Service/pulse)
-* [Code of conduct](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/CONTRIBUTING.md)
-* [License](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/LICENSE.md)
-* [Testing procedures](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/testing-procedures.md)
-* [Development notes](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/development-notes.md)
+* [Repository](https://github.com/spectrum-health-systems/AvatoolWebService)
+* [Homepage](https://github.com/spectrum-health-systems/AvatoolWebService)
+* [Changelog](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CHANGELOG.md)
+* [Issues](https://github.com/spectrum-health-systems/AvatoolWebService/issues)
+* [Pull requests](https://github.com/spectrum-health-systems/AvatoolWebService/pulls)
+* [Project board](https://github.com/spectrum-health-systems/AvatoolWebService/projects)
+* [Wiki](https://github.com/spectrum-health-systems/AvatoolWebService/wiki)
+* [Security alerts](https://github.com/spectrum-health-systems/AvatoolWebService/network/alerts)
+* [Insights](https://github.com/spectrum-health-systems/AvatoolWebService/pulse)
+* [Code of conduct](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CODE_OF_CONDUCT.md)
+* [Contributing](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CONTRIBUTING.md)
+* [License](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/LICENSE.md)
+* [Testing procedures](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/testing-procedures.md)
+* [Development notes](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/development-notes.md)
 
 ### RELATED PROJECTS
-* [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar™ EHR
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar™ solution using ScriptLink.
 
 ***
