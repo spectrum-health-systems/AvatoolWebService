@@ -1,198 +1,340 @@
-<!-- GRU-Readme v3.2.0.191114 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
-     GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
-     an abundance of comments walking you through how to use each component.
----------------------------------------------------------------------------------------------------------------------->
-<h2 align="center">
-  Avatool Web Service
-  <br>
-  <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="180">
-  <br>
-  A custom Web service for Netsmart's myAvatar™ EHR
+<!---------------------------------------------------------------------------------------------------------------------
+FILENAME: README.md
+ PROJECT: a-repository-template(https://github.com/aprettycoolprogram/gru-readme-template)
+ VERSION: Version 3.3.1.191223
+ UPDATED: 12-23-2019 (11:20 AM)
+ AUTHORS: development@aprettycoolprogram.com
 
+Copyright 2019 A Pretty Cool Program
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
+---------------------------------------------------------------------------------------------------------------------->
+
+<!-- INFORMATION-------------------------------------------------------------------------------------------------------
+This is a customizable README.md template written in GitHub-flavored Markdown (content) and HTML (layout). The source
+contains an abundance of comments walking you through how to use each component.
+---------------------------------------------------------------------------------------------------------------------->
+
+<!-- ARCHIVED PROJECT BANNER [Optional] -------------------------------------------------------------------------------
+Make it clear that this is an archived repository.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+<!-- By default, this block of code is commented out.
+***
+### THIS REPOSITORY HAS BEEN ARCHIVED
+[RepositoryName] Development has been moved to [**RepositoryName**](https://github.com/GitHubAccount/RepositoryName/tree/master).
+
+You can also have an explanation of why this repository has been archived.
+***
+-->
+
+<!-- DEVELOPMENT BRANCH BANNER [Optional] -----------------------------------------------------------------------------
+Make it clear that this is a development branch.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+<!-- By default, this block of code is commented out.
+***
+### THIS IS THE DEVELOPMENT BRANCH
+You are probably looking for the [**stable branch**](https://github.com/GitHubAccount/RepositoryName/tree/master).
+
+Here are some commands you can use with the development branch.
+
+```
+$ ExampleCommand1
+$ ExampleCommand2
+```
+***
+-->
+
+<!-- LOGO AND SHORT BLURB [Required] ----------------------------------------------------------------------------------
+Display a logo and give a short description what the repository is. Keep the description short, and save the details
+for the introduction. The repository name is optional; sometimes it looks good, sometimes it doesn't. Increase/decrease
+the logo size by increasing/decreasing the "width" value.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+<h2 align="center">
+  A Repository Template
+  <br>
+  <img src="https://github.com/aprettycoolprogram/gru-repository-template/blob/master/repository-resource/image/logo/gru-repository-template-logo-200x188.png" alt="A Repository Template" width="200">
+  <br>
+  A template for GitHub repositories
   <br>
   <br>
 </h2>
 <br>
 
+<!-- REPOSITORY BADGES [Optional] -------------------------------------------------------------------------------------
+Convey important information about the repository. See https://shields.io for more information about customizing
+badges.
+
+For "Status", choose one of the following:
+* Active: ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+* Maintained: ![Status](https://img.shields.io/badge/status-maintained-green.svg)
+* Depreciated: ![Status](https://img.shields.io/badge/status-depreciated-yellowgreen.svg)
+* Archived: ![Status](https://img.shields.io/badge/status-archived-yellow.svg)
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
-	![GitHub release](https://img.shields.io/github/release/spectrum-health-systems/Avatool-Web-Service?label=latest%20release)
-	![MadeFor](https://img.shields.io/badge/made_for-myavatar-blue.svg)
-	![MadeWith](https://img.shields.io/badge/made_with-C%23-blue.svg)
-	[![License](https://img.shields.io/github/license/spectrum-health-systems/Avatool-Web-Service)](https://www.apache.org/licenses/LICENSE-2.0)
+  ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+  [![License](https://img.shields.io/github/license/aprettycoolprogram/gru-repository-template)](https://www.apache.org/licenses/LICENSE-2.0)
+  ![GitHub release](https://img.shields.io/github/release/aprettycoolprogram/gru-repository-template?label=latest%20release)
 
 </div>
 
+<!-- SCREENSHOT [Optional] --------------------------------------------------------------------------------------------
+Screenshots are nice. Increase/decrease the logo size by increasing/decreasing the "width" value.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+<div align="center">
+  <img src="https://github.com/aprettycoolprogram/gru-repository-template/blob/master/repository-resource/image/screenshot/your-screenshot-here.png" alt="Your screenshot here" width="400">
+  <br>
+</div>
+
+<!-- TABLE OF CONTENTS [Optional] -------------------------------------------------------------------------------------
+A Table of Contents allows users to quickly find exactly what they are looking for.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 <h5 align="left">
 
   ### CONTENTS
   [ABOUT THIS REPOSITORY](#about-this-repository)<br>
   [FEATURES](#features)<br>
   [REQUIREMENTS](#requirements)<br>
+  [EXAMPLE](#example)<br>
   [BEFORE YOU BEGIN](#before-you-begin)<br>
   [GETTING STARTED](#getting-started)<br>
   [INSTALLING](#installing)<br>
+  [BUILD PROCESS](#build-process)<br>
+  [SETUP](#setup)<br>
+  [CONFIGURATION](#configuration)<br>
   [USAGE](#usage)<br>
   [UPDATING](#updating)<br>
   [UNINSTALLING](#uninstalling)<br>
+  [DEMO](#demo)<br>
+  [HOW IT WORKS](#how-it-works)<br>
+  [API](#api)<br>
+  [FAQ](#faq)<br>
+  [SUPPORT](#support)<br>
   [DEVELOPMENT](#development)<br>
-  [ADDENDUM](#addendum)
 
 </h5>
 
+<!-- ABOUT THIS REPOSITORY [Required] ---------------------------------------------------------------------------------
+Introduce your repository, and encourage the reader to continue reading. You should:
+* Describe what the repository is.
+* What problem(s) does it solve?
+* What is the motivation/philosophy behind it?
+* Why should the user care or want to use it?
+* List one or two noteworthy features that stand out from similar repositories
+* Clarify the level of knowledge required, and note key technical concepts/technologies/frameworks used
+* Use screenshots and code snippets to illustrate general functionality
+* Use Markdown to make text stand out.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # ABOUT THIS REPOSITORY
-[myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR, developed by [Netsmart](https://www.ntst.com/), that offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
+This is a template for GitHub repositories. Just clone this project, add your files, customize some things, and there you go!
 
-While myAvatar™ is a robust platform, like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), it isn't perfect.
+One of the first things you should do is to modify this file, README.md. Your repository README is the first thing users will see. It's your one shot to make a good first impression and convince the reader they should learn more about your repository. But where do you start? What makes a good README file?
 
-The good news is that myAvatar™ functionality can be extended via Netsmart's myAvatar™ Web Services, and/or custom web services that are written by myAvatar™ users.
+This is a README.md template written in GitHub-flavored Markdown and HTML. A simple text editor (even GitHub itself) is all you need. The README source code contains an abundance of comments that walk you through each of the components. Customize those you want to use and remove those you don't need.
 
-The Avatool Web Service is one such custom web service which includes various tools and utilities for myAvatar™ that aren't included in the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
-
+<!-- FEATURES [Optional] ----------------------------------------------------------------------------------------------
+Important features of your repository here. This shouldn't be an exhaustive list, just the cool stuff.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # FEATURES
-* Several built-in tools and utilities for use with myAvatar™
-* A solid foundation to build additional custom tools and utilities
+* Feature #1
+* Feature #2
+* Feature #3
 
+<!-- REQUIREMENTS [Optional] ------------------------------------------------------------------------------------------
+Requirements are what a user will need in order to use this repository in any capacity.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # REQUIREMENTS
-* A location to host the Avatool Web Service
-* Access to your myAvatar™ environments from the Avatool Web Service via HTTPS
+* Requirement #1
+* Requirement #2
+* Requirement #3
 
+<!-- EXAMPLES [Optional] ----------------------------------------------------------------------------------------------
+Examples uses.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# EXAMPLES
+Some examples of gru-repository-template in action:
+* Example #1
+* Example #2
+* Example #3
+
+<!-- BEFORE YOU BEGIN [Optional] --------------------------------------------------------------------------------------
+Important information that the user should know before they continue.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # BEFORE YOU BEGIN
-There are a few things you should know before using the Avatool Web Service in your myAvatar™ environments.
+A GitHub README.md file can be written in GitHub-flavored Markdown, HTML, or a mix of both. Each of these formats have their advantages and disadvantages, and a well-written README will leverage the strength of each. In order to use this template, you'll need to understand at least the basics of both.
 
-#### You will probably need to customize some stuff
-Some components of the Avatool Web Service will need to be customized before they can be used at your organization.
+#### What is markdown?
+[Markdown](https://en.wikipedia.org/wiki/Markdown) is a lightweight markup language with plain text formatting syntax. Markdown's key design goal is *readability*. This readme uses GitHub-flavored Markdown, for the README *content*.
 
-These components, and the customization that they require, are detailed various documents in this repository. You'll know what needs to be changed, and what it needs to be changed to, as long as you follow the instructions.
+#### What is HTML?
+[HTML](https://en.wikipedia.org/wiki/HTML) is the standard markup language for creating web pages and web applications. Keep in mind that GitHub README.md files do not fully support HTML syntax - a small subset of HTML tags are allowed. In addition, most HTML structures are either unnecessary (thanks to Markdown), or unsupported. For the most part, this template uses HTML to modify the *layout* of your README, such as complex tables or content positioning
 
-#### You'll need a place to host the Avatool Web Service
-You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS v10. I took some notes on [setting up IIS](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/setting-up-iis.md) (YMMV!) for the Avatool Web Service, if you decide to go that route.
+### ACKNOWLEDGEMENTS
+While designing these templates, I read, researched, and borrowed ideas from existing README resources, and this project would not have been possible without them. Please see the [acknowledgements](documentation/acknowledgements.md) and document for more information. 
 
-You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
+### ADDITIONAL READING
+For more Markdown resources, please see the [additional reading](documentation/additional-reading.md) document.
 
-#### Let's talk about ScriptLink
-When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
+### RELATED PROJECTS
+* [**Related project #1**](URL)
 
-Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. I mean, a "custom web service" is just that - a web service. ScriptLink isn't a web service.
-
-As far as I can tell, ScriptLink is simply a *link* to a *script*. Or, more specifically, a *link* to a *custom web service*. Or, even more specifically, *something that calls a method in a custom web service when something is done with/on a form in myAvatar™*.
-
-In closing, in my experience, ScriptLink is essentially a line of code in the form designer that kicks off the magical stuff you've written in a custom web service.
-
+<!-- GETTING STARTED [Optional] ---------------------------------------------------------------------------------------
+An overview of how to install/configure/build/use the project.
+* Pre-requisites are different than requirements. Requirements are what you will need in order to use the project in
+  any capacity (i.e. a text editor), and pre-requisites are what you need once you've met the requirements and have
+  decided to use the project (i.e. a copy of this template file).
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
 
 ### PRE-REQUISITES
-If you are self-hosting the Avatool Web Service, you will need a web server that:
-* Serves data via HTTPS
-* Includes the .NET 4.6 framework
+Pre-requisites are different than requirements. Requirements are what you will need in order to use the project in any capacity (i.e. a text editor), and pre-requisites are what you need once you've met the requirements and have decided to use the project (i.e. a copy of this template file).
 
+### DEPENDENCIES
+List any dependencies, and instructions to install them, here.
+
+### RECOMMENDATIONS
+Remember: you never get a second chance to make a first impression. Put aside the necessary amount of time to create a document that is accurate, grammatically correct, and informative. Don't rush this!
+
+<!-- INSTALLATION [Optional] ------------------------------------------------------------------------------------------
+Steps to install this project.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # INSTALLING
-The Avatool Web Service isn't *installed* so much as it is *published*.
+Overview of the installation process
 
-The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
+### WINDOWS
+1. The steps to install the project in Windows
+2. Use both Markdown and/or HTML
+3. Include screenshots when possible.
+4. Remove this section if the project doesn't support Windows (and mention that in the "Other operating systems" section below).
 
+### MACOS
+1. The steps to install the project in MacOS
+2. Use both Markdown and/or HTML
+3. Include screenshots when possible.
+4. Remove this section if the project doesn't support MacOS (and mention that in the "Other operating systems" section below).
+
+### LINUX
+1. The steps to install the project in Linux
+2. Use both Markdown and/or HTML
+3. Include screenshots when possible.
+4. Remove this section if the project doesn't support Linux (and mention that in the "Other operating systems" section below).
+
+### OTHER OPERATING SYSTEMS
+1. The steps to install the project in other operating systems
+2. Use both Markdown and/or HTML
+3. Include screenshots when possible.
+4. If other operating systems are not supported, mention that here.
+
+<!-- BUILD PROCESS [Optional] -----------------------------------------------------------------------------------------
+Build process instructions.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# BUILD PROCESS
+If your project has a build process, document it here.
+
+<!-- SETUP [Optional] -------------------------------------------------------------------------------------------------
+Instructions to setup your project.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# SETUP
+If your project has a setup procedure, document it here. For example, you may need to make changes to a configuration
+file before using the project.
+
+<!-- CONFIGURATION [Optional] -----------------------------------------------------------------------------------------
+Describe how to configure the project.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# CONFIGURATION
+Many projects offer configuration options, which should be listed here. Keep in mind that any configuration that needs to be done before using this project should be listed in the [setup](#setup) section above.
+
+### Important notes about the configuration
+Optional notes about configuration go here.
+
+<!-- USAGE [Optional] -------------------------------------------------------------------------------------------------
+How to use the project.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # USAGE
-To use the Avatool Web Service with myAvatar™, you will need to add a ScriptLink event to one of the following events on a form:
-* when the form loads ("Form Load")
-* after the submit button is clicked, but prior to filing the form ("Pre-File")
-* after the submit button is clicked and the form has been filed ("Post-File")
+This template file is filled with comments like this:
+```
+<!-- ABOUT THIS REPOSITORY [Required] -----------------------------------------------------------------
+Introduce your repository, and encourage the reader to continue reading. You should:
+* Describe what the repository is.
+* What problem(s) does it solve?
+* What is the motivation/philosophy behind it?
+* Why should the user care or want to use it?
+* List one or two noteworthy features that stand out from similar repositories
+* Clarify the level of knowledge required, and note key technical concepts/technologies/frameworks used
+* Use screenshots and code snippets to illustrate general functionality
+* Use Markdown to make text stand out.
+------------------------------------------------------------- (Remove this comment block when done) -->
+```
+These comments are intended to walk you through creating content for each component, and can be removed to keep your final README.md clean. Some components are [Required], and some are [Optional], but in reality these are just guidelines.
 
-You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
+### IMPORTANT NOTES ABOUT USAGE
+Optional notes about usage go here.
 
-### ADDING A SCRIPT LINK EVENT TO A FORM
-In order to have the Avatar Web Service do something, you need to have something *call* the web service. You'll do this by adding a ScriptLink event on the form you're working with. In order to do this:
-1. Open the **Form Designer** form
-2. Choose the myAvatar™ form you want to use from the **Forms** dropdown
-3. Choose the form tab from the **Tabs** dropdown
-4. Click the **Show Tab** button
-
-You will now see the form tab in designer mode. In the upper left of myAvatar™ you will see a **Settings** button:
-
-![Form Designer settings](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/form-designer-settings-button.png)
-
-Clicking the **Settings** button will bring you to the ScriptLink options page:
-
-![Blank ScriptLink options](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-blank.png)
-
-The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import** button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
-
-For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` should display XML that looks something like this:
-
-![XML example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/xml-example.png)
-
-If you see the XML:
-1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar™
-2. Click the **Import** button.
-
-You should get a popup letting you know the WSDL was imported successfully.
-
-Next we will need to choose an event that will call the Avatool Web Service, and determine the action that will take place. This will all be done on the ScriptLink options page:
-
-![ScriptLink options example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-example.png)
-
-Our example will call the *VerifyInpatientAdmissionDate* action on the form's *Pre-File* event:
-1. Click the dropdown in the **Pre-File** row under the **Availble Scripts** column
-2. Choose **AvatoolWebService** (the *red* box)
-3. Type "VerifyInpatientAdmissionDate" in the **Pre-File** row under the **Script Parameter** column (the *purple* box)
-4. Uncheck the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes  (the *green* box)
-5. Click **Return to Designer** (the *yellow* box), and the ScriptLink options page will close, and you will be back on the **Tab Designer** page
-6. Click the **Save** button, and you bw returned to the **Form Designer** page
-7. Click **Submit**
-
-### AVATOOL WEB SERVICE CALLS
-Currently there is a single call in the Avatool Web Service:
-* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
-
+<!-- UPDATING [Optional] ----------------------------------------------------------------------------------------------
+Updating procedure.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # UPDATING
-Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
+Any updating procedures should be documented here.
 
+<!-- UNINSTALL [Optional]----------------------------------------------------------------------------------------------
+Uninstall procedure.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # UNINSTALLING
-Once you have imported a WSDL into myAvatar™, it cannot be removed. There is no "uninstall".
+Any uninstall procedures should be documented here.
 
-What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
+<!-- API [Optional] ---------------------------------------------------------------------------------------------------
+API documentation.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# API
+If your project contains an API, it should be documented here.
 
+<!-- HOW IT WORKS [Optional] ------------------------------------------------------------------------------------------
+Sometimes it's fun to let users know how the magic happens.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# HOW IT WORKS
+Sometimes it's fun to let users know how the magic happens.
+
+<!-- FAQ [Optional] ---------------------------------------------------------------------------------------------------
+Frequently Asked Questions.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# FAQ
+### Are you nice?
+I think so.
+
+<!-- SUPPORT [Optional] -----------------------------------------------------------------------------------------------
+Support information.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
+# SUPPORT
+Good luck!
+
+<!-- DEVELOPMENT [Optional] -------------------------------------------------------------------------------------------
+Development information.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 # DEVELOPMENT
-The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/AvatoolWebService/tree/development).
+This project is currently being developed by [A Pretty Cool Program](https://github.com/APrettyCoolProgram). You can view the version history [here](documentation/changelog.md).
 
-If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar™.
+If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/aprettycoolprogram/a-repository-template/tree/development). You can also read the [development notes](documentation/development-notes.md).
 
 ### CONTRIBUTING
-If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
+If you are interested in contributing to this project, please review our [code of conduct](documentation/code-of-conduct.md), [contributing guidelines](documentation/code-of-conduct.md), and [testing procedures](documentation/testing.md) documentation.
 
-# ADDENDUM
-### ACKNOWLEDGEMENTS
-
-* All icons are from [Icons8](https://icons8.com)
-
-### PROJECT RESOURCES
-* [Repository](https://github.com/spectrum-health-systems/AvatoolWebService)
-* [Homepage](https://github.com/spectrum-health-systems/AvatoolWebService)
-* [Changelog](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CHANGELOG.md)
-* [Issues](https://github.com/spectrum-health-systems/AvatoolWebService/issues)
-* [Pull requests](https://github.com/spectrum-health-systems/AvatoolWebService/pulls)
-* [Project board](https://github.com/spectrum-health-systems/AvatoolWebService/projects)
-* [Wiki](https://github.com/spectrum-health-systems/AvatoolWebService/wiki)
-* [Security alerts](https://github.com/spectrum-health-systems/AvatoolWebService/network/alerts)
-* [Insights](https://github.com/spectrum-health-systems/AvatoolWebService/pulse)
-* [Code of conduct](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CONTRIBUTING.md)
-* [License](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/LICENSE.md)
-* [Testing procedures](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/testing-procedures.md)
-* [Development notes](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/development-notes.md)
-
-### RELATED PROJECTS
-* [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar™ solution using ScriptLink.
-
+<!-- DEVELOPER INFORMATION [Required] ---------------------------------------------------------------------------------
+Developer information.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 ***
 
 <div align="center">
 
   [![Developed by](https://img.shields.io/badge/developed%20by-A%20Pretty%20Cool%20Program-17806D.svg)](https://aprettycoolprogram.com)&nbsp;
-  [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/APrettyCoolProgram)&nbsp;
+  [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;
   [![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;
   [![Feedback](https://img.shields.io/badge/contact-info@aprettycoolprogram.com-17806D.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;
-  [![Built using](https://img.shields.io/badge/README%20built%20using-GRU%20README-17806D.svg)](https://github.com/APrettyCoolProgram/GRU--Readme)&nbsp;
+  [![Built using](https://img.shields.io/badge/built%20using-a--repository--template-17806D.svg)](https://github.com/aprettycoolprogram/a-repository-template/)&nbsp;
 
 </div>
