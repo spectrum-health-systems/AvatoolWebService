@@ -145,7 +145,8 @@ namespace Avatool_Web_Service
              *
              * Use Error Code 4 to allow the user to ignore the date issue, and submit the form with different dates.
              */
-            var systemDate       = new DateTime(2019, 1, 18);                                                          // TODO Use the same formatting as the above declaration.
+            var systemDate       = new DateTime(1900, 1, 1); // TODO Use the same formatting as the above declaration.
+            systemDate = DateTime.Today;
             var errorMessageBody = string.Empty;
             var errorMessageCode = 0;
 
@@ -153,7 +154,7 @@ namespace Avatool_Web_Service
             {
                 if (preAdmitToAdmissionDate != systemDate)
                 {
-                    errorMessageBody = "WARNING\nThe Pre-Admission date does not match today's date";
+                    errorMessageBody = "WARNING\nThe Pre-Admission date does not match today's date!";
                     errorMessageCode = 1;
                 }
             }
@@ -166,6 +167,10 @@ namespace Avatool_Web_Service
             {
                 returnOptionObject.ErrorCode = errorMessageCode;
                 returnOptionObject.ErrorMesg = errorMessageBody;
+
+                //// DEBUGGING ONLY
+                //returnOptionObject.ErrorCode = errorMessageCode;
+                //returnOptionObject.ErrorMesg = "[ERROR]\nError Code: " + errorMessageCode + "Type of admission: " + typeOfAdmission + "\n" + "PreAdmit Date: " + preAdmitToAdmissionDate + "System Date: " + systemDate;
             }
 
             /* >>> DEBUGGING ONLY <<<
