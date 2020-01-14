@@ -2,19 +2,12 @@
      GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
      an abundance of comments walking you through how to use each component.
 ---------------------------------------------------------------------------------------------------------------------->
-***
-### DOCUMENTATION IS NOT COMPLETE
-
-The Avatool Web Service v1.0 has been released, but I'm still working on updating/creating documentation. Just FYI.
-
-***
-
 <h2 align="center">
   Avatool Web Service
   <br>
   <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="180">
   <br>
-  A custom Web Service for Netsmart's myAvatar EHR
+  A custom Web Service for Netsmart's myAvatar™ EHR
 
   <br>
   <br>
@@ -49,11 +42,6 @@ The Avatool Web Service v1.0 has been released, but I'm still working on updatin
 </h5>
 
 # ABOUT THIS REPOSITORY
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/spectrum-health-systems/Avatool-Web-Service/master)
-![GitHub issues](https://img.shields.io/github/issues/spectrum-health-systems/Avatool-Web-Service)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/spectrum-health-systems/Avatool-Web-Service)
-[![GitHub contributors](https://img.shields.io/github/contributors/spectrum-health-systems/Avatool-Web-Service)](https://github.com/spectrum-health-systems/Avatool-Web-Service//graphs/contributors)
-
 [myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR, developed by [Netsmart](https://www.ntst.com/), that offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
 
 While myAvatar™ is a robust platform, like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), it isn't perfect.
@@ -106,7 +94,7 @@ The Avatool Web Service isn't *installed* so much as it is *published*.
 The current method of publishing the web service is to just copy the entire project to where it is being hosted. Future versions of the Avatool Web Service will utilize the publishing functionality of Visual Studio.
 
 # USAGE
-To use the Avatool Web Service with myAvatar, you will need to add a ScriptLink event to one of the following events on a form:
+To use the Avatool Web Service with myAvatar™, you will need to add a ScriptLink event to one of the following events on a form:
 * when the form loads ("Form Load")
 * after the submit button is clicked, but prior to filing the form ("Pre-File")
 * after the submit button is clicked and the form has been filed ("Post-File")
@@ -135,7 +123,7 @@ For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` 
 ![XML example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/readme/xml-example.png)
 
 If you see the XML:
-1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar
+1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar™
 2. Click the **Import** button.
 
 You should get a popup letting you know the WSDL was imported successfully.
@@ -161,14 +149,14 @@ Currently there is a single call in the Avatool Web Service:
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
 
 # UNINSTALLING
-Once you have imported a WSDL into myAvatar, it cannot be removed. There is no "uninstall".
+Once you have imported a WSDL into myAvatar™, it cannot be removed. There is no "uninstall".
 
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
 
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/Avatool-Web-Service/tree/development).
 
-If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar.
+If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar™.
 
 ### CONTRIBUTING
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
@@ -195,8 +183,8 @@ If you are interested in contributing to this project, please see the [contribut
 * [Development notes](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/development-notes.md)
 
 ### RELATED PROJECTS
-* [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar EHR
-* [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar solution using ScriptLink.
+* [Avatool](https://github.com/APrettyCoolProgram/Avatool): A collection of tools and utilities for Netsmart's myAvatar™ EHR
+* [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar™ solution using ScriptLink.
 
 ***
 

@@ -11,7 +11,7 @@
 [ADDITIONAL READING](#additional-reading)<br>
 
 ## INTRODUCTION
-If you are curious as to how the Avatool Web Service was created, or you are looking for some information on creating your own custom web service for myAvatar, these are the steps I took.
+If you are curious as to how the Avatool Web Service was created, or you are looking for some information on creating your own custom web service for myAvatar™, these are the steps I took.
 
 ## BEFORE YOU BEGIN
 To create the Avatool Web Service, I used:
@@ -67,8 +67,8 @@ The downloaded file is a .zip archive, which you'll need to extract. Once extrac
 1. Copy the extracted folder to the root of the Avatool Web Service project:
    ```
    136_180_9_ScriptLinkTutorialWithOptionObject2/ScriptLinkTutorialWithOptionObject2/DotNetCode/ScriptLinkServiceComplete/NTST.ScriptLinkService.Objects/
-   ``` 
-   
+   ```
+
 When complete, the folder structure of the Avatool Web Service project should look like this:
 ```
     /bin/
@@ -110,7 +110,7 @@ namespace Avatool_Web_Service
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
     // [System.Web.Script.Services.ScriptService]
     public class AvatoolWebService : System.Web.Services.WebService
     {
@@ -123,7 +123,7 @@ namespace Avatool_Web_Service
 }
 ```
 
-Custom Web Services that interface with myAvatar require two methods to be present.
+Custom Web Services that interface with myAvatar™ require two methods to be present.
 
 The first is `GetVersion()`
 ```
@@ -164,7 +164,7 @@ namespace Avatool_Web_Service
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
     // [System.Web.Script.Services.ScriptService]
     public class AvatoolWebService : System.Web.Services.WebService
     {
