@@ -1,1 +1,0 @@
-# TESTING: a-repository-template

@@ -1,1 +1,0 @@
-# SUPPORT: a-repository-template

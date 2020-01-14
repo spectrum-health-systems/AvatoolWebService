@@ -1,2 +1,0 @@
-# About dependency/
-### Application dependencies
