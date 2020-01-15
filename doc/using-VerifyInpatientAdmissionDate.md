@@ -15,7 +15,7 @@ If the dates match, the form is submitted normally.
 If the dates do not match, the user is notified and returned to the Admission form to correct the Pre-Admission date.
 
 ## BEFORE YOU BEGIN
-I would recommend that you review the sourcecode for [VerifyInpatientAdmissionDate()]().
+I would recommend that you review the sourcecode for [VerifyInpatientAdmissionDate()](https://raw.githubusercontent.com/spectrum-health-systems/AvatoolWebService/master/src/AvatoolWebService.asmx.cs).
 
 ## HOW IT WORKS
 The VerifyInpatientAdmissionDate() call verifies that an existing Pre-Admission date is the same as the system date.
@@ -28,7 +28,7 @@ Here is how it works:
 ## INSTALLATION
 You don't *install* the VerifyInpatientAdmissionDate() call, you create a *ScriptLink event* for it.
 
-The VerifyInpatientAdmissionDate() call is designed to be used on the **Pre-File** event of the **Admisssion Form**. The ScriptLink event should be added to the **Admission tab** of the form.
+The VerifyInpatientAdmissionDate() call is designed to be used on the **Pre-File** event of the **Admission Form**. The ScriptLink event should be added to the **Admission tab** of the form.
 
 ## CONFIGURATION
 ### REQUIRED

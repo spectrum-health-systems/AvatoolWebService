@@ -28,20 +28,20 @@ I’ve named the application pool *AvatoolWebService*.
 
 This is what my application pool setup looks like:
 
-![Application Pool example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/application-pool-example.png)
+![Application Pool example](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/doc/image/setup-iis/application-pool-example.png)
 
 Again, I’m sure that all of these are not necessary, nor do all of the application pools need to be started.
 
 ### CREATE A NEW SITE
 Right-click the **Sites** connection, and choose **Add Website…**.
 
-![New Site example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/new-site-example.png)
+![New Site example](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/doc/image/setup-iis/new-site-example.png)
 
 Complete the following fields:
 * Site name: *AvatoolWebService*
 * Application pool: *AvatoolWebService*
 * Physical path: */path/to/your/files/*
-  
+
 You will also need to setup the site bindings for both port 80 and 443.
 
 ### DISABLE THE DEFAULT WEBSITE
@@ -54,16 +54,16 @@ ASP.NET is required by Web Services, so add the ASP.NET role to IIS.
 
 Once that’s done, your IIS roles should look like this:
 
-![Roles example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/roles-example.png)
+![Roles example](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/doc/image/setup-iis/roles-example.png)
 
 And your AvatoolWebService site should look like this:
 
-![Home example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/home-example.png)
+![Home example](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/doc/image/setup-iis/home-example.png)
 
 ### ENABLE DIRECTORY BROWSING
 Double-click on the **Directory Browsing** icon
 
-![Directory Browsing example](https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/doc/Images/setup-iis/directory-browsing-example.png)
+![Directory Browsing example](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/doc/image/setup-iis/directory-browsing-example.png)
 
 Choose **Enable**, then **Apply**.
 
