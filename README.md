@@ -161,7 +161,7 @@ Our example will call the *VerifyInpatientAdmissionDate* action on the form's *P
 
 ### AVATOOL WEB SERVICE CALLS
 Currently there is a single call in the Avatool Web Service:
-* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
+* [**VerifyInpatientAdmissionDate**](https://github.com/spectrum-health-systems/AvatoolWebService/blob/development/doc/using-VerifyInpatientAdmissionDate.md): verifies that a client's Pre-Admission Date is the same as the current date.
 
 # UPDATING
 Currently, the process of updating the Avatool Web Service is to simply remove the old build, and copy the new build to your web server.
@@ -174,29 +174,28 @@ What you can do, though, is check the **Disable All Scripts For Form** and **Dis
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/AvatoolWebService/tree/development).
 
-If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/Creating-the-Avatool-Web-Service.md). This will give you an empty Web Service that can be used with myAvatar™.
+If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, you can follow the instructions for [creating the Avatool Web Service](https://github.com/spectrum-health-systems/AvatoolWebService/blob/development/doc/creating-a-new-avatool-web-service-project.md). This will give you an empty Web Service that can be used with myAvatar™.
 
 ### CONTRIBUTING
-If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
+If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/doc/contributing.md).
 
 ### ACKNOWLEDGEMENTS
 * All icons are from [Icons8](https://icons8.com)
 
 ### PROJECT RESOURCES
-* [Repository](https://github.com/spectrum-health-systems/AvatoolWebService)
-* [Homepage](https://github.com/spectrum-health-systems/AvatoolWebService)
-* [Changelog](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CHANGELOG.md)
-* [Issues](https://github.com/spectrum-health-systems/AvatoolWebService/issues)
-* [Pull requests](https://github.com/spectrum-health-systems/AvatoolWebService/pulls)
-* [Project board](https://github.com/spectrum-health-systems/AvatoolWebService/projects)
-* [Wiki](https://github.com/spectrum-health-systems/AvatoolWebService/wiki)
-* [Security alerts](https://github.com/spectrum-health-systems/AvatoolWebService/network/alerts)
-* [Insights](https://github.com/spectrum-health-systems/AvatoolWebService/pulse)
-* [Code of conduct](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/CONTRIBUTING.md)
-* [License](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/LICENSE.md)
-* [Testing procedures](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/testing-procedures.md)
-* [Development notes](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/doc/development-notes.md)
+* [Repository](https://github.com/spectrum-health-systems/avatoolwebservice)
+* [Homepage](https://github.com/spectrum-health-systems/avatoolwebservice)
+* [Changelog](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/CHANGELOG.md)
+* [Issues](https://github.com/spectrum-health-systems/avatoolwebservice/issues)
+* [Pull requests](https://github.com/spectrum-health-systems/avatoolwebservice/pulls)
+* [Project board](https://github.com/spectrum-health-systems/avatoolwebservice/projects)
+* [Wiki](https://github.com/spectrum-health-systems/avatoolwebservice/wiki)
+* [Security alerts](https://github.com/spectrum-health-systems/avatoolwebservice/network/alerts)
+* [Insights](https://github.com/spectrum-health-systems/avatoolwebservice/pulse)
+* [Code of conduct](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/repo/doc/code-of-conduct.md)
+* [License](https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/LICENSE.md)
+* [Testing procedures](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/doc/testing.md)
+* [Development notes](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/dev/development-notes.md)
 
 ### RELATED PROJECTS
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar™ solution using ScriptLink.
@@ -207,6 +206,6 @@ If you are interested in contributing to this project, please see the [contribut
   [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;
   [![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;
   [![Feedback](https://img.shields.io/badge/contact-info@aprettycoolprogram.com-17806D.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;
-  [![Built using](https://img.shields.io/badge/built%20using-a--repository--template-17806D.svg)](https://github.com/aprettycoolprogram/a-repository-template/)&nbsp;
+  [![Built using](https://img.shields.io/badge/built%20using-a--repository--template-17806D.svg)](https://github.com/aprettycoolprogram/gru-codebase-repository/)&nbsp;
 
 </div>
