@@ -19,8 +19,6 @@ To create the Avatool Web Service, I used:
 * .NET Framework 4.6, since SOAP is not supported in .NET Core
 * C#
 
-If you want to skip the steps below, you can download the [Avatool Web Service v0.0 project](https://github.com/APrettyCoolProgram/Avatool-Web-Service/releases/tag/v0.0.0.0), which was built using this document.
-
 ## CREATING THE AVATOOL WEB SERVICE PROJECT
 First, we need to create an empty ASP.NET Web Application project. Using Visual Studio 2019:
 
@@ -37,7 +35,7 @@ First, we need to create an empty ASP.NET Web Application project. Using Visual 
 ## ADDING A NEW WEB SERVICE TO THE PROJECT
 Now you have a brand new project for the Avatool Web Service, but since we created an empty project, it doesn't actually have any Web Services assigned to it.
 
-You can create multiple Web Services, with each handling different funcionality (and there are probably benefits to doing so), but the Avatool Web Service has a single Web Service that handles everything. That way it is (hopefully) easier to use.
+You can create multiple Web Services, with each handling different functionality (and there are probably benefits to doing so), but the Avatool Web Service has a single Web Service that handles everything. That way it is (hopefully) easier to use.
 
 So let's add a Web Service to the Avatool Web Service project.
 
@@ -49,7 +47,7 @@ So let's add a Web Service to the Avatool Web Service project.
 6. Right click the **AvatoolWebService.asmx** file and choose **Set as Start Page**
 
 ## ADDING THE NETSMART SCRIPTLINK SERVICE
-In order for our new AvatoolWebService Web Service to work, we'll need to add the Netsmart ScriptLink Service to our project. The Netsmart ScriptLink Service can be found in the Applicaition Exchange on the Netsmart Cares portal.
+In order for our new AvatoolWebService Web Service to work, we'll need to add the Netsmart ScriptLink Service to our project. The Netsmart ScriptLink Service can be found in the Application Exchange on the Netsmart Cares portal.
 
 ### OBTAINING THE NETSMART SCRIPTLINK SERVICE
 1. Login to the *Netsmart Cares portal*

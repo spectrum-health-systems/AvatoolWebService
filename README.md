@@ -1,14 +1,31 @@
-<!-- GRU-Readme v3.2.0.191114 (https://github.com/APrettyCoolProgram/GRU-Readme) --------------------------------------
-     GRU-README is customizable README.md template written in GitHub-flavored Markdown and HTML. The source contains
-     an abundance of comments walking you through how to use each component.
+<!---------------------------------------------------------------------------------------------------------------------
+FILENAME: README.md
+ PROJECT: gru-codebase-repository(https://github.com/aprettycoolprogram/gru/src/gru-repository-template)
+ VERSION: Version 4.0.0.200114
+ UPDATED: 01-14-2020 (9:00 PM)
+ AUTHORS: development@aprettycoolprogram.com
+
+Copyright 2019-2020 A Pretty Cool Program
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+specific language governing permissions and limitations under the License.
 ---------------------------------------------------------------------------------------------------------------------->
+
+<!-- INFORMATION-------------------------------------------------------------------------------------------------------
+This is a customizable README.md template written in GitHub-flavored Markdown (content) and HTML (layout). The source
+contains an abundance of comments walking you through how to use each component.
+---------------------------------------------------------------------------------------------------------------------->
+
 <h2 align="center">
   Avatool Web Service
   <br>
-  <img src="https://github.com/spectrum-health-systems/Avatool-Web-Service/blob/master/reporesources/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="180">
+  <img src="https://github.com/spectrum-health-systems/avatoolwebservice/blob/master/repo/image/logo/avatool-webservice-logo-100x100.png" alt="Avatool Web Service" width="200">
   <br>
   A custom Web service for Netsmart's myAvatar™ EHR
-
   <br>
   <br>
 </h2>
@@ -16,14 +33,16 @@
 
 <div align="center">
 
-![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
-	![GitHub release](https://img.shields.io/github/release/spectrum-health-systems/Avatool-Web-Service?label=latest%20release)
-	![MadeFor](https://img.shields.io/badge/made_for-myavatar-blue.svg)
-	![MadeWith](https://img.shields.io/badge/made_with-C%23-blue.svg)
-	[![License](https://img.shields.io/github/license/spectrum-health-systems/Avatool-Web-Service)](https://www.apache.org/licenses/LICENSE-2.0)
+  ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+  [![License](https://img.shields.io/github/license/spectrum-health-systems/avatoolwebservice)](https://www.apache.org/licenses/LICENSE-2.0)
+  ![GitHub release](https://img.shields.io/github/release/spectrum-health-systems/avatoolwebservice?label=latest%20release)
 
 </div>
 
+
+<!-- TABLE OF CONTENTS [Optional] -------------------------------------------------------------------------------------
+A Table of Contents allows users to quickly find exactly what they are looking for.
+----------------------------------------------------------------------------- (Remove this comment block when done) -->
 <h5 align="left">
 
   ### CONTENTS
@@ -37,7 +56,6 @@
   [UPDATING](#updating)<br>
   [UNINSTALLING](#uninstalling)<br>
   [DEVELOPMENT](#development)<br>
-  [ADDENDUM](#addendum)
 
 </h5>
 
@@ -161,9 +179,7 @@ If you would rather start with a completely blank Avatool Web Service, or you wa
 ### CONTRIBUTING
 If you are interested in contributing to this project, please see the [contributing guidelines](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/APrettyCoolProgramProjects/CODE_OF_CONDUCT.md).
 
-# ADDENDUM
 ### ACKNOWLEDGEMENTS
-
 * All icons are from [Icons8](https://icons8.com)
 
 ### PROJECT RESOURCES
@@ -185,14 +201,12 @@ If you are interested in contributing to this project, please see the [contribut
 ### RELATED PROJECTS
 * [ScriptLinkStandard](https://github.com/rcskids/ScriptLinkStandard): A Class Library designed to assist developers in creating SOAP web services that can be consumed by Netsmart's myAvatar™ solution using ScriptLink.
 
-***
-
 <div align="center">
 
   [![Developed by](https://img.shields.io/badge/developed%20by-A%20Pretty%20Cool%20Program-17806D.svg)](https://aprettycoolprogram.com)&nbsp;
-  [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/APrettyCoolProgram)&nbsp;
+  [![GitHub](https://img.shields.io/github/followers/aprettycoolprogram.svg?label=GitHub&style=social)](https://github.com/aprettycoolprogram)&nbsp;
   [![Twitter](https://img.shields.io/twitter/follow/aprettycoolprog.svg?label=Twitter&style=social)](https://twitter.com/aprettycoolprog)&nbsp;
   [![Feedback](https://img.shields.io/badge/contact-info@aprettycoolprogram.com-17806D.svg)](mailto:feedback@aprettycoolprogram.com)&nbsp;
-  [![Built using](https://img.shields.io/badge/README%20built%20using-GRU%20README-17806D.svg)](https://github.com/APrettyCoolProgram/GRU--Readme)&nbsp;
+  [![Built using](https://img.shields.io/badge/built%20using-a--repository--template-17806D.svg)](https://github.com/aprettycoolprogram/a-repository-template/)&nbsp;
 
 </div>
