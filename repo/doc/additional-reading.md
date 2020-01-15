@@ -1,1 +1,1 @@
-# ADDITIONAL READING: gru-codebase-repository
+# ADDITIONAL READING: Avatool Web Service

@@ -1,10 +1,5 @@
-# CHANGELOG:  gru-codebase-repository
+# CHANGELOG: Avatool Web Service
 
-## v0.0.0 (YYYY-MM-DD)
+## v1.0.0.0 (2019-11-14)
 ##### INFORMATION
-##### ADDED
-##### CHANGED
-##### FIXED
-##### DEPRECIATED
-##### REMOVED
-##### SECURITY
+* Initial release

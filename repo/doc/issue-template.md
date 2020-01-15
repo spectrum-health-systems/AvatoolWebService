@@ -1,1 +1,1 @@
-# ISSUE TEMPLATE: gru-codebase-repository
+# ISSUE TEMPLATE: Avatool Web Service
