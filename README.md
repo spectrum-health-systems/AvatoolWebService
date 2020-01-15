@@ -128,17 +128,17 @@ In order to have the Avatar Web Service do something, you need to have something
 
 You will now see the form tab in designer mode. In the upper left of myAvatar™ you will see a **Settings** button:
 
-![Form Designer settings](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/form-designer-settings-button.png)
+![Form Designer settings](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/form-designer-settings-button.png)
 
 Clicking the **Settings** button will bring you to the ScriptLink options page:
 
-![Blank ScriptLink options](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-blank.png)
+![Blank ScriptLink options](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/scriptlink-blank.png)
 
 The first thing you will need to do is import the Avatool Web Service WSDL. Before you actually click the **Import** button, you should make sure that the WSDL URL is correct. You can verify the WDSL URL by typing it into a web browser address bar.
 
 For example, URL of `https://your-organization.com/AvatoolWebService.asmx?WSDL` should display XML that looks something like this:
 
-![XML example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/xml-example.png)
+![XML example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/xml-example.png)
 
 If you see the XML:
 1. Copy/paste the URL from your browsers address bar into the **Import WSDL for ScriptLink** field in myAvatar™
@@ -148,7 +148,7 @@ You should get a popup letting you know the WSDL was imported successfully.
 
 Next we will need to choose an event that will call the Avatool Web Service, and determine the action that will take place. This will all be done on the ScriptLink options page:
 
-![ScriptLink options example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/reporesources/image/readme/scriptlink-example.png)
+![ScriptLink options example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/scriptlink-example.png)
 
 Our example will call the *VerifyInpatientAdmissionDate* action on the form's *Pre-File* event:
 1. Click the dropdown in the **Pre-File** row under the **Availble Scripts** column
