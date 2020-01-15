@@ -1,1 +1,0 @@
-# CONTRIBUTORS: gru-codebase-repository

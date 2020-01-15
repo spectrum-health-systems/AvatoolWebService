@@ -1,1 +1,0 @@
-# ISSUE TEMPLATE: gru-codebase-repository
