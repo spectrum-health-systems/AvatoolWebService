@@ -1,0 +1,18 @@
+<application>
+  <component name="EditorSettings">
+    <option name="STRIP_TRAILING_SPACES" value="None" />
+    <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
+  </component>
+  <component name="TodoConfiguration">
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[CHANGE\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[FIX\])(\W|$)(.*)" />
+    <pattern pattern="(?&lt;=\W|^)(?&lt;TAG&gt;TODO)(\W|$)(.*)" />
+    <pattern icon="important" case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[BUG\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[ADD\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[DEPRECIATE\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[REMOVE\])(\W|$)(.*)" />
+    <pattern icon="question" case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[WHAT\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[DEVNOTE\])(\W|$)(.*)" />
+    <pattern case-sensitive="true" pattern="(?&lt;=\W|^)(?&lt;TAG&gt;\[DISABLED\])(\W|$)(.*)" />
+  </component>
+</application>
