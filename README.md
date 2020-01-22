@@ -171,6 +171,24 @@ Once you have imported a WSDL into myAvatar™, it cannot be removed. There is n
 
 What you can do, though, is check the **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page, which will ScriptLink from calling any custom web services.
 
+In order to do this:
+1. Open the **Form Designer** form
+2. Choose the myAvatar™ form you want to use from the **Forms** dropdown
+3. Choose the form tab from the **Tabs** dropdown
+4. Click the **Show Tab** button
+
+You will now see the form tab in designer mode. In the upper left of myAvatar™ you will see a **Settings** button:
+
+![Form Designer settings](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/form-designer-settings-button.png)
+
+Clicking the **Settings** button will bring you to the ScriptLink options page:
+
+![ScriptLink options example](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/scriptlink-example.png)
+
+Then, make sure both **Disable All Scripts For Form** and **Disable All Scripts on Error** boxes on the ScriptLink options page are checked, which will ScriptLink from calling any custom web services.
+
+![Blank ScriptLink options](https://github.com/spectrum-health-systems/AvatoolWebService/blob/master/repo/image/readme/scriptlink-blank.png)
+
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/AvatoolWebService/tree/development).
 
