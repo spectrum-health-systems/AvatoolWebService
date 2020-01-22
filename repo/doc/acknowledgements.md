@@ -1,1 +1,1 @@
-# ACKNOWLEDGEMENTS: gru-codebase-repository
+# ACKNOWLEDGEMENTS: Avatool Web Service

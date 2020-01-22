@@ -1,1 +1,1 @@
-# CONTRIBUTORS: gru-codebase-repository
+# CONTRIBUTORS: Avatool Web Service
