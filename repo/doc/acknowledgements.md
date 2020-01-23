@@ -1,1 +1,0 @@
-# ACKNOWLEDGEMENTS: Avatool Web Service
