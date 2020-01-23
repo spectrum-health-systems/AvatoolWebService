@@ -1,6 +1,6 @@
 ﻿// ===========================================================================================================  3:01 PM
 //    FILENAME: AvatoolWebService.asmx.cs
-//       BUILD: 20191114
+//       BUILD: 20200123
 //     PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
 //     AUTHORS: development@aprettycoolprogram.com
 //   COPYRIGHT: Copyright 2019 A Pretty Cool Program
@@ -9,10 +9,10 @@
 
 /* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
  */
-using NTST.ScriptLinkService.Objects;
 using System;
 using System.ComponentModel;
 using System.Web.Services;
+using NTST.ScriptLinkService.Objects;
 
 namespace Avatool_Web_Service
 {
@@ -36,7 +36,7 @@ namespace Avatool_Web_Service
         {
             /* This method is required by myAvatar.
              */
-            return "VERSION 1.0";
+            return "VERSION 1.1";
         }
 
         /// <summary>
