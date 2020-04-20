@@ -1,1 +1,0 @@
-# ISSUE TEMPLATE: Avatool Web Service
