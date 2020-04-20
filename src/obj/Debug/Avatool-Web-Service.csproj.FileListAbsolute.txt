@@ -1,0 +1,119 @@
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.csprojAssemblyReference.cache
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\build\Avatool-Web-Service.dll.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\build\Avatool-Web-Service.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\build\Avatool-Web-Service.pdb
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.csproj.CopyComplete
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.pdb
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\Avatool-Web-Service.dll.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\Avatool-Web-Service.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\Avatool-Web-Service.pdb
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csc.exe
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csc.exe.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csc.rsp
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csi.exe
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csi.exe.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\csi.rsp
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.AppContext.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Console.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.IO.Compression.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.IO.Pipes.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Claims.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.ValueTuple.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Xml.XPath.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\vbc.exe
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\vbc.exe.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\vbc.rsp
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\VBCSCompiler.exe
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.dll
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.pdb
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.xml
+C:\Users\chris.banwarth\GitHub\Avatool-Web-Service\src\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\Avatool-Web-Service.dll.config
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\Avatool-Web-Service.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\Avatool-Web-Service.pdb
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csc.exe
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csc.exe.config
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csc.rsp
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csi.exe
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csi.exe.config
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\csi.rsp
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.AppContext.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Console.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.IO.Compression.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.IO.Pipes.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Claims.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.ValueTuple.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Xml.XPath.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\vbc.exe
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\vbc.exe.config
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\vbc.rsp
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\VBCSCompiler.exe
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.pdb
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\NTST.ScriptLinkService.Objects.xml
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.csprojAssemblyReference.cache
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.csproj.CopyComplete
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.dll
+C:\Users\chris.banwarth\GitHub\Spectrum Health Systems\Avatool-Web-Service\src\obj\Debug\Avatool-Web-Service.pdb
