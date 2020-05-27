@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppResources\Doc\Dev\development-notes.txt" />
     <Content Include="AvatoolWebService.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -75,9 +76,13 @@
       <DependentUpon>AvatoolWebService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="InpatientAdmission.cs" />
+    <Compile Include="OptionObjectStuff.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppResources\Doc\Dev\changelog.md" />
+    <Content Include="AppResources\Doc\Dev\roadmap.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
