@@ -1,11 +1,10 @@
-﻿// ===========================================================================================================  3:01 PM
-//    FILENAME: AvatoolWebService.asmx.cs
-//       BUILD: 20200123
-//     PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
-//     AUTHORS: development@aprettycoolprogram.com
-//   COPYRIGHT: Copyright 2019 A Pretty Cool Program
-//     LICENSE: Apache License, Version 2.0
-// ====================================================================================================================
+﻿/* Project: Avatool Web Service
+ * AvatoolWebServiceStating.asmx.cs: The main file.
+ * b0527.1204
+ * (c) 2020 A Pretty Cool Program
+ * https://github.com/spectrum-health-systems/avatool-web-service)
+ * Licensed under the Apache License 2.0
+ */
 
 /* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
  */
