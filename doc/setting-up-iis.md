@@ -1,4 +1,5 @@
 # SETTING UP IIS v10 FOR THE AVATAR WEB SERVICE
+*Last updated May 20, 2020*
 
 ### CONTENTS
 [INTRODUCTION](#introduction)<br>
@@ -8,14 +9,26 @@
 
 ## INTRODUCTION
 You'll also need a location to host the Avatool Web Service. In our environment, the Avatool Web Service resides on a Microsoft Windows Server 2019 with IIS. These are the notes I took when setting up IIS.
+
 You can also have Netsmart host your custom web services (for a fee), but the Avatool Web Service has not been tested in a hosted environment.
 
 ## BEFORE YOU BEGIN
-These notes/steps aren't perfect, and I don't plan on updating them, so YMMV.
+These notes/steps aren't perfect, so YMMV.
 
 ## SETTING UP IIS
 ### INSTALLING IIS
-I'm not going to document the procedure for adding the IIS role to a server, as it's pretty straight forward.
+1. Start the "Add Roles and Features Wizard" from the Server Manager Dashboard.
+2. On the "Installation Type" page, choose "Rold-based or feature-based installation"
+3. On the "Server Selection" page, choose your server
+4. On the "Server Roles" page, check "Web Server (IIS)
+5. When the popup appears detailing the required tools, click "Add Features"
+6. On the "Features" page, make sure the following ".NET 4.7 Features" options are checked:
+    * .Net Framework 4.7
+    * ASP.NET 4.7
+    * WCF Services > TCP Port Sharing
+7. On the "Role Services" page, make sure the following options are checked:
+    * HTTP Redirection
+    * FTP Server
 
 ### CREATING AN APPLICATION POOL
 I’m not sure this step is necessary, but it helps to make things a little more organized…maybe? I’m not an IIS expert, so I’m not sure.
@@ -32,6 +45,9 @@ This is what my application pool setup looks like:
 
 Again, I’m sure that all of these are not necessary, nor do all of the application pools need to be started.
 
+### DISABLE THE DEFAULT WEBSITE
+Right-click the Default Web Site, then **Manage Web Site** > **Stop**
+
 ### CREATE A NEW SITE
 Right-click the **Sites** connection, and choose **Add Website…**.
 
@@ -40,14 +56,11 @@ Right-click the **Sites** connection, and choose **Add Website…**.
 Complete the following fields:
 * Site name: *AvatoolWebService*
 * Application pool: *AvatoolWebService*
-* Physical path: */path/to/your/files/*
+* Physical path: */path/to/your/files/* (Mine is "c:\AvatoolWebService)
 
-You will also need to setup the site bindings for both port 80 and 443.
+For now, leave the Binding section alone, and click "OK"
 
-### DISABLE THE DEFAULT WEBSITE
-Might as well.
-
-Right-click the Default Web Site, then **Manage Web Site** > **Stop**
+If you get a warning about duplicate sites using port 80
 
 ### INSTALL THE ASP.NET ROLE
 ASP.NET is required by Web Services, so add the ASP.NET role to IIS.
