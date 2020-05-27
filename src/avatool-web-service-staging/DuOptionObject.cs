@@ -1,4 +1,12 @@
-﻿using NTST.ScriptLinkService.Objects;
+﻿/* Project: Avatool Web Service
+ * DuOptionObject.cs: OptionObject2 stuff.
+ * b0527.1401
+ * (c) 2020 A Pretty Cool Program
+ * https://github.com/spectrum-health-systems/avatool-web-service)
+ * Licensed under the Apache License 2.0
+ */
+
+using NTST.ScriptLinkService.Objects;
 
 namespace Avatool_Web_Service
 {
@@ -65,6 +73,5 @@ namespace Avatool_Web_Service
 
             return completedOptionObject;
         }
-
     }
 }

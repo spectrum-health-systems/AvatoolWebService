@@ -1,6 +1,6 @@
 ﻿/* Project: Avatool Web Service
  * InpatientAdmission.cs: Inpatient admission stuff.
- * b0527.1204
+ * b0527.1401
  * (c) 2020 A Pretty Cool Program
  * https://github.com/spectrum-health-systems/avatool-web-service)
  * Licensed under the Apache License 2.0

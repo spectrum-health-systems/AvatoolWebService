@@ -77,7 +77,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="InpatientAdmission.cs" />
-    <Compile Include="OptionObjectStuff.cs" />
+    <Compile Include="DuOptionObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
