@@ -6,9 +6,12 @@
  * Licensed under the Apache License 2.0
  */
 
-/* >>> THIS IS THE STAGING BRANCH <<<
- * This code is heavily commented, the intention being that it's abundantly
- * clear as to what it does, and how it works.
+/* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
+ */
+
+/* FUNCTIONALITY TESTING
+ * ---------------------
+ * This class contains source code intended for testing future Avatool Web Service functionality.
  */
 
 using System.ComponentModel;
@@ -18,11 +21,11 @@ using NTST.ScriptLinkService.Objects;
 namespace Avatool_Web_Service
 {
     /// <summary>Summary description for AvatoolWebService.</summary>
-    [WebService(Namespace         = "http://tempuri.org/")]
+    [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [ToolboxItem(false)]
 
-    public class AvatoolWebService : WebService
+    public class AvatoolWebServiceTesting : WebService
     {
         /// <summary>Returns the Avatool Web Service version number.</summary>
         /// <returns>The Avatool Web Service version number.</returns>
@@ -31,7 +34,7 @@ namespace Avatool_Web_Service
         {
             /* This method is required by myAvatar.
              */
-            return "VERSION 1.2";
+            return "VERSION 1.3";
         }
 
         /// <summary>Performs an Avatool Web Service "action".</summary>
@@ -47,7 +50,7 @@ namespace Avatool_Web_Service
              * will perform, each of which is handled by an individual method.
              *
              * The Avatool Web Service has the following valid actions:
-             *
+
              *  [VerifyInpatientAdmissionDate]
              *      Verify that the Inpatient Admission Date is the same as the
              *      system date.
@@ -62,7 +65,7 @@ namespace Avatool_Web_Service
             switch (action)
             {
                 case "VerifyInpatientAdmissionDate":
-                    objectToReturn = InpatientAdmission.VerifyInpatientAdmissionDate(sentObject);
+                    objectToReturn = InpatientAdmissionTesting.VerifyInpatientAdmissionDate(sentObject);
                     break;
 
                 default:
