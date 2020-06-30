@@ -1,1 +1,0 @@
-# CONTRIBUTORS: Avatool Web Service
