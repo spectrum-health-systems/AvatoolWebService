@@ -67,6 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppResource\Dev\Doc\code-snippits.txt" />
+    <Content Include="AppResource\Dev\Doc\development-notes.txt" />
+    <Content Include="AppResource\Dev\Doc\scratch-pad.txt" />
+    <Content Include="AppResource\Doc\HowTo\img\howto-screenshot-400x400.png" />
+    <Content Include="AppResource\Doc\Man\img\manual-screenshot-400x400.png" />
     <Content Include="AvatoolWebServiceTesting.asmx" />
     <Content Include="AvatoolWebService.asmx" />
     <Content Include="Web.config" />
@@ -89,7 +94,49 @@
   <ItemGroup>
     <Content Include="AppData\Doc\changelog.md" />
     <Content Include="AppData\Doc\development-notes.md" />
+    <Content Include="AppResource\about-this-folder.md" />
+    <Content Include="AppResource\Asset\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Audio\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Font\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Image\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Image\Control\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Image\Icon\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Image\Logo\about-this-folder.md" />
+    <Content Include="AppResource\Asset\Video\about-this-folder.md" />
+    <Content Include="AppResource\Data\about-this-folder.md" />
+    <Content Include="AppResource\Data\Config\about-this-folder.md" />
+    <Content Include="AppResource\Data\DevMode\about-this-folder.md" />
+    <Content Include="AppResource\Data\Runtime\about-this-folder.md" />
+    <Content Include="AppResource\Dev\about-this-folder.md" />
+    <Content Include="AppResource\Dev\Doc\about-this-folder.md" />
+    <Content Include="AppResource\Dev\ThirdParty\about-this-folder.md" />
+    <Content Include="AppResource\Doc\about-this-folder.md" />
+    <Content Include="AppResource\Doc\HowTo\about-this-folder.md" />
+    <Content Include="AppResource\Doc\Man\about-this-folder.md" />
+    <Content Include="AppResource\Doc\Proj\about-this-folder.md" />
+    <Content Include="AppResource\Doc\Proj\acknowledgements-and-third-party-information.md" />
+    <Content Include="AppResource\Doc\Proj\additional-reading.md" />
+    <Content Include="AppResource\Doc\Proj\changelog.md" />
+    <Content Include="AppResource\Doc\Proj\code-of-conduct.md" />
+    <Content Include="AppResource\Doc\Proj\contributing.md" />
+    <Content Include="AppResource\Doc\Proj\contributors.md" />
+    <Content Include="AppResource\Doc\Proj\issue-template.md" />
+    <Content Include="AppResource\Doc\Proj\known-issues.md" />
+    <Content Include="AppResource\Doc\Proj\license.md" />
+    <Content Include="AppResource\Doc\Proj\notices.md" />
+    <Content Include="AppResource\Doc\Proj\pull-request-template.md" />
+    <Content Include="AppResource\Doc\Proj\roadmap.md" />
+    <Content Include="AppResource\Doc\Proj\support.md" />
+    <Content Include="AppResource\Doc\Proj\testing.md" />
+    <Content Include="AppResource\Help\about-this-folder.md" />
+    <Content Include="AppData\Doc\about-this-folder.md" />
+    <Content Include="AppData\Doc\Cache\about-this-folder.md" />
+    <Content Include="AppData\Doc\Config\about-this-folder.md" />
+    <Content Include="AppData\Doc\Database\about-this-folder.md" />
+    <Content Include="AppData\Doc\Runtime\about-this-folder.md" />
+    <Content Include="AppData\Doc\Tmp\about-this-folder.md" />
     <None Include="packages.config" />
+    <Content Include="sourcecode.licenseheader" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,7 +150,14 @@
       <Name>NTST.ScriptLinkService.Objects</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="AppResource\Asset\Audio\Embedded\" />
+    <Folder Include="AppResource\Asset\Font\Embedded\" />
+    <Folder Include="AppResource\Asset\Image\Control\Embedded\" />
+    <Folder Include="AppResource\Asset\Image\Icon\Embedded\" />
+    <Folder Include="AppResource\Asset\Image\Logo\Embedded\" />
+    <Folder Include="AppResource\Asset\Video\Embedded\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

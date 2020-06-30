@@ -1,0 +1,21 @@
+﻿extensions: .html .xaml
+<!--
+	Avatool Web Service (https://github.com/spectrum-health-systems/avatool-web-service)
+	<file-name> (bMMDD.HHMM): <file-description>
+	Authors:
+	 development@aprettycoolprogram.com
+	Additional documentation: /AppResource/Doc/Proj/
+-->
+
+extensions: designer.cs generated.cs
+extensions: .cs
+// Avatool Web Service (https://github.com/spectrum-health-systems/avatool-web-service)
+// <file-name> (bMMDD.HHMM): <file-description>
+// Authors:
+//	development@aprettycoolprogram.com
+// Additional documentation: /AppResource/Doc/Proj/
+
+extensions: .md
+> [Avatool Web Service](https://github.com/spectrum-health-systems/avatool-web-service)<br>
+> <file-name>: <file-description>
+> Additional documentation: /AppResource/Doc/Proj/
