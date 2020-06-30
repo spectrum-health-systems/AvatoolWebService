@@ -1,3 +1,7 @@
+> [Avatool Web Service](https://github.com/spectrum-health-systems/avatool-web-service)<br>
+> <file-name>: <file-description>
+> Additional documentation: /AppResource/Doc/Proj/
+
 # Avatool Web Service Manual
 > v2.0
 

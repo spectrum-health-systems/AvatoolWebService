@@ -1,14 +1,21 @@
-﻿/* Project: Avatool Web Service
- * AvatoolWebServiceStating.asmx.cs: The main file.
- * b0610.1141
- * (c) 2020 A Pretty Cool Program
- * https://github.com/spectrum-health-systems/avatool-web-service)
- * Licensed under the Apache License 2.0
+﻿// Avatool Web Service (https://github.com/spectrum-health-systems/avatool-web-service)
+// AvatoolWebService.asmx.cs (b200630.1232): Main logic for the Avatool Web Service.
+// Authors:
+//	development@aprettycoolprogram.com
+// Additional documentation: /AppResource/Doc/Proj/
+
+/* THIS IS THE PRODUCTION CLASS!
+ * This class contains source code intended for production Avatool Web Service functionality.
+ *
+ * All testing code can be found in "AvatoolWebServiceTesting.asmx.cs"
  */
 
-/* >>> THIS IS THE STAGING BRANCH <<<
- * This code is heavily commented, the intention being that it's abundantly
- * clear as to what it does, and how it works.
+/* READ THE MANUAL
+ * https://github.com/spectrum-health-systems/avatool-web-service/blob/development/src/avatool-web-service/AppResource/Doc/Man/avatool-web-service-manual.md
+ */
+
+/* ABOUT SOURCE CODE COMMENTS
+ * This code is heavily commented, so that it is abundantly clear as to what it does, and how it works.
  */
 
 using System.ComponentModel;

@@ -1,5 +1,5 @@
 > [Avatool Web Service](https://github.com/spectrum-health-systems/avatool-web-service)<br>
-> issue-template: Template for GitHub issues.
+> issue-template.md: Template for GitHub issues.
 > Additional documentation: /AppResource/Doc/Proj/
 
 # ISSUE TEMPLATE

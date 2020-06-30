@@ -1,4 +1,8 @@
-﻿### AppResource/Asset/Image/Document/
+﻿> [Avatool Web Service](https://github.com/spectrum-health-systems/avatool-web-service)<br>
+> <file-name>: <file-description>
+> Additional documentation: /AppResource/Doc/Proj/
+
+### AppResource/Asset/Image/Document/
 > This file is a placeholder to ensure that ***AppResource/Asset/Image/Document/*** is included in the GitHub repository, and is also
 created (if it doesn't exist already) at runtime.
 

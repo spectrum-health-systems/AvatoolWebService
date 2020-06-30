@@ -1,17 +1,24 @@
-﻿/* Project: Avatool Web Service
- * AvatoolWebServiceStating.asmx.cs: The main file.
- * b0610.1141
- * (c) 2020 A Pretty Cool Program
- * https://github.com/spectrum-health-systems/avatool-web-service)
- * Licensed under the Apache License 2.0
- */
+﻿// Avatool Web Service (https://github.com/spectrum-health-systems/avatool-web-service)
+// AvatoolWebServiceTesting.asmx.cs (b200630.1232): Main logic for the Avatool Web Service.
+// Authors:
+//	development@aprettycoolprogram.com
+// Additional documentation: /AppResource/Doc/Proj/
 
-/* This code is heavily commented, the intention being that it's abundantly clear as to what it does, and how it works.
- */
-
-/* FUNCTIONALITY TESTING
- * ---------------------
+/* *************************************
+ * * >>> THIS IS THE TESTING CLASS <<< *
+ * *************************************
+ *
  * This class contains source code intended for testing future Avatool Web Service functionality.
+ *
+ * Once it has been determined that the code functions as expected, it should be copied to "AvatoolWebService.asmx.cs"
+ */
+
+/* READ THE MANUAL
+ * https://github.com/spectrum-health-systems/avatool-web-service/blob/development/src/avatool-web-service/AppResource/Doc/Man/avatool-web-service-manual.md
+ */
+
+/* ABOUT SOURCE CODE COMMENTS
+ * This code is heavily commented, so that it is abundantly clear as to what it does, and how it works.
  */
 
 using System.ComponentModel;
@@ -32,9 +39,9 @@ namespace Avatool_Web_Service
         [WebMethod]
         public string GetVersion()
         {
-            /* This method is required by myAvatar.
+            /* This method is required by myAvatar, and should not be removed.
              */
-            return "VERSION 1.3";
+            return "VERSION 2.0";
         }
 
         /// <summary>Performs an Avatool Web Service "action".</summary>
@@ -44,28 +51,25 @@ namespace Avatool_Web_Service
         [WebMethod]
         public OptionObject2 RunScript(OptionObject2 sentObject, string action)
         {
-            /* This method is required by myAvatar.
+            /* This method is required by myAvatar, and should not be removed.
              *
-             * When you add a ScriptLink event in myAvatar, you need to pass an action that the Avatool Web Service
-             * will perform, each of which is handled by an individual method.
+             * When you add a ScriptLink event to a form in myAvatar, you need to pass an action that the Avatool Web
+             * Service will perform, each of which is handled by an individual method call.
              *
-             * The Avatool Web Service has the following valid actions:
+             * The Avatool Web Service 2.0 has the following valid actions:
 
              *  [VerifyInpatientAdmissionDate]
              *      Verify that the Inpatient Admission Date is the same as the
              *      system date.
-             *
-             * For more information about how to use ScriptLink events, please see the Avatool Web Service README.md:
-             *
-             *      https://github.com/spectrum-health-systems/avatool-web-service/blob/master/README.md
              */
 
             var objectToReturn = new OptionObject2();
 
-            switch (action)
+            switch(action)
             {
                 case "VerifyInpatientAdmissionDate":
-                    objectToReturn = InpatientAdmissionTesting.VerifyInpatientAdmissionDate(sentObject);
+                    // objectToReturn = InpatientAdmission.VerifyInpatientAdmissionDate(sentObject);     // PRODUCTION
+                    objectToReturn = InpatientAdmissionTesting.VerifyInpatientAdmissionDate(sentObject); // TESTING
                     break;
 
                 default:

@@ -1,9 +1,24 @@
-﻿/* Project: Avatool Web Service
- * InpatientAdmission.cs: Inpatient admission stuff.
- * b0610.1141
- * (c) 2020 A Pretty Cool Program
- * https://github.com/spectrum-health-systems/avatool-web-service)
- * Licensed under the Apache License 2.0
+﻿// Avatool Web Service (https://github.com/spectrum-health-systems/avatool-web-service)
+// InpatientAdmission.cs (b200630.1232): Inpatient admission functionality logic.
+// Authors:
+//	development@aprettycoolprogram.com
+// Additional documentation: /AppResource/Doc/Proj/
+
+/* ****************************************
+ * * >>> THIS IS THE PRODUCTION CLASS <<< *
+ * ****************************************
+ *
+ * This class contains source code intended for testing future Avatool Web Service functionality.
+ *
+ * Once it has been determined that the code functions as expected, it should be copied to "InpatientAdmissionTesting.cs"
+ */
+
+/* READ THE MANUAL
+ * https://github.com/spectrum-health-systems/avatool-web-service/blob/development/src/avatool-web-service/AppResource/Doc/Man/avatool-web-service-manual.md
+ */
+
+/* ABOUT SOURCE CODE COMMENTS
+ * This code is heavily commented, so that it is abundantly clear as to what it does, and how it works.
  */
 
 using System;
