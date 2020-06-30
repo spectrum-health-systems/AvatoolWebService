@@ -9,6 +9,7 @@
 `ADDED` sourcecode.licenseheader: License header information for the [License Header Manager extension](https://marketplace.visualstudio.com/items?itemName=StefanWenig.LicenseHeaderManager)
 `CHANGED` AppData/*:  Added the AppData/ template from [A Pretty Cool Program: Dotfiles, Templates, and Gists, etc.](https://github.com/APrettyCoolProgram/dotfiles-templates-and-gists-etc)
 `CHANGED` Updated sourcecode file headers
+`CHANGED` Document image locations/names
 `REMOVED` Various unecessary project document files that were incorporated into README.md
 
 ## v1.1.0.0 (2020-1-23)

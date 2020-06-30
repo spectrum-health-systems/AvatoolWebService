@@ -55,18 +55,18 @@ specific language governing permissions and limitations under the License.
 </h5>
 
 # ABOUT THIS REPOSITORY
-[myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR developed by [Netsmart](https://www.ntst.com/). myAvatar™ offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
+[myAvatar™](https://www.ntst.com/Solutions-and-Services/Offerings/myAvatar) is a behavioral health EHR developed by [Netsmart](https://www.ntst.com/) which offers a recovery-focused suite of solutions that leverage real-time analytics and clinical decision support to drive value-based care.
 
-While myAvatar™ is a robust platform, like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), it isn't perfect. The good news is that myAvatar™ functionality can be extended via [Netsmart's myAvatar™ Web Services](https://wikihelp.ntst.com/myAvatar%E2%84%A2/Avatar_Web_Services), and/or custom web services that are written by myAvatar™ users just like you!
+Like most things in life (except [Heroes of Might and Magic III](https://www.gog.com/game/heroes_of_might_and_magic_3_complete_edition)), myAvatar™ isn't perfect. The good news is that myAvatar™ functionality can be extended via [Netsmart's myAvatar™ Web Services](https://wikihelp.ntst.com/myAvatar%E2%84%A2/Avatar_Web_Services), and/or custom web services that are written by myAvatar™ users just like you!
 
-The Avatool Web Service is one such custom web service which includes various tools and utilities for myAvatar™ that aren't included in the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
+The **Avatool Web Service** is one such custom web service that includes various tools and utilities for myAvatar™ that aren't included in the official release, and provides a solid foundation for building additional functionality quickly and efficiently.
 
 # FEATURES
 * Several built-in tools and utilities for use with myAvatar™
 * A solid foundation to build additional custom tools and utilities
 
 # REQUIREMENTS
-* A location to host the Avatool Web Service
+* A location to host the Avatool Web Service (with .NET 4.6 framework installed)
 * Access to your myAvatar™ environments from the Avatool Web Service via HTTPS
 
 # BEFORE YOU BEGIN
@@ -76,23 +76,20 @@ There are a few things you should know before implementing the Avatool Web Servi
 Ther is a [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md), and you should read it.
 
 ### You will need to make modifications for your organization/environments
-These customizations are detailed in the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md). These changes are required in order for the Avatool Web Service to work in your environments.
+In order for the Avatool Web Service to work at your organization, in your environments, you will need to make some modifications to the sourcecode. These modifications are detailed in the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md).
 
 ### You'll need a place to host the Avatool Web Service
-You will need a location to host the Avatool Web Service. Netsmart will do this for you (for a price), or you can host it yourself. There are some (very basic!) instructions for self-hosting the Avatool Web Service using IIS in the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md).
+Netsmart will do this for you (for a price), or you can host it yourself. There are some (very basic!) instructions for self-hosting the Avatool Web Service using IIS in the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md).
 
 ### Let's talk about ScriptLink
-When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink. And depending on who/what is describing what ScriptLink is/does, you are going to get different answers.
+When working with custom web services and myAvatar™, it's inevitable that you will hear about ScriptLink - and depending on who you are talking with, you are going to get different answers as to what ScriptLink is/does.
 
 Netsmart tends to use "ScriptLink" as another way to say "custom web services", but that's not really the case. ScriptLink isn't a web service, it's essentially a *link* inside myAvatar™ that points to a *script* (or, more specifically, a *link* to a *method call in a custom web service*).
 
 # GETTING STARTED
 Before we continue, please verify you have met the [requirements](#requirements).
 
-### PRE-REQUISITES
-If you are self-hosting the Avatool Web Service, you will need a web server that:
-* Serves data via HTTPS
-* Includes the .NET 4.6 framework
+Also, this documentation (as well as the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md) assumes that you are self-hosting the Avatool Web Service.
 
 # INSTALLING
 Currently the Avatool Web Service isn't *installed* so much as it is *published*. The current method of publishing the web service is to just copy the entire project to where it is being hosted. This is all covered in the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md).
@@ -102,8 +99,6 @@ To use the Avatool Web Service with myAvatar™, you will need to add a ScriptLi
 * When the form loads ("Form Load")
 * After the submit button is clicked, but prior to filing the form ("Pre-File")
 * After the submit button is clicked and the form has been filed ("Post-File")
-
-You can also use custom web services with fields and controls, but that is beyond the scope of this documentation.
 
 The [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md) explains this process in detail.
 
@@ -119,6 +114,9 @@ Once you have imported a WSDL into myAvatar™, it cannot be removed or uninstal
 
 # DEVELOPMENT
 The project is currently being developed by A Pretty Cool Program. If your interested in what's coming in the next release, the development branch of the project can be found [development branch](https://github.com/spectrum-health-systems/avatool-web-service/tree/development).
+
+### Developing your own version of the Avatool Web Service
+If you would rather start with a completely blank Avatool Web Service, or you want to create your own custom web service for myAvatar™, the [Avatool Web Service Manual](AppResource/Doc/Man/avatool-web-service-manual.md) outlines the steps to take to create an empty Web Service that can be used with myAvatar™.
 
 ### Contributors
 * Chris Banwarth (https://github.com/APrettyCoolProgram)
