@@ -145,18 +145,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="NTST.ScriptLinkService.Objects\NTST.ScriptLinkService.Objects.vbproj">
-      <Project>{5ec9314e-835e-4794-9fc9-2a00df57058f}</Project>
-      <Name>NTST.ScriptLinkService.Objects</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="AppResource\Asset\Audio\Embedded\" />
     <Folder Include="AppResource\Asset\Font\Embedded\" />
     <Folder Include="AppResource\Asset\Image\Control\Embedded\" />
     <Folder Include="AppResource\Asset\Image\Icon\Embedded\" />
     <Folder Include="AppResource\Asset\Image\Logo\Embedded\" />
     <Folder Include="AppResource\Asset\Video\Embedded\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NTST.ScriptLinkService.Objects\NTST.ScriptLinkService.Objects.vbproj">
+      <Project>{5ec9314e-835e-4794-9fc9-2a00df57058f}</Project>
+      <Name>NTST.ScriptLinkService.Objects</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

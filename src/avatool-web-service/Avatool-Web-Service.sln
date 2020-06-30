@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avatool-Web-Service", "Avatool-Web-Service.csproj", "{D78616B2-005C-4509-A870-15C87F2428AA}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NTST.ScriptLinkService.Objects", "NTST.ScriptLinkService.Objects\NTST.ScriptLinkService.Objects.vbproj", "{5EC9314E-835E-4794-9FC9-2A00DF57058F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NTST.ScriptLinkService.Objects", "..\NTST.ScriptLinkService.Objects\NTST.ScriptLinkService.Objects.vbproj", "{5EC9314E-835E-4794-9FC9-2A00DF57058F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
