@@ -83,6 +83,7 @@
     <Content Include="Resources\Doc\avatar-web-service-changelog.md" />
     <Content Include="Resources\Dev\avatar-web-service-development-notes.md" />
     <None Include="packages.config" />
+    <Content Include="avatool-web-service.licenseheader" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
