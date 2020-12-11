@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AvatoolWebService.asmx" />
+    <Content Include="Resources\Dev\avatar-web-service-scratchpad.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -76,10 +77,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Dev\avatar-web-service-snippits.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppData\Doc\changelog.md" />
-    <Content Include="AppData\Doc\development-notes.md" />
+    <Content Include="Resources\Doc\avatar-web-service-changelog.md" />
+    <Content Include="Resources\Dev\avatar-web-service-development-notes.md" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
