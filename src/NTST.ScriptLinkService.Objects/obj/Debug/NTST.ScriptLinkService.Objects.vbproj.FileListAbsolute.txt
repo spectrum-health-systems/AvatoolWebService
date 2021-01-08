@@ -64,3 +64,13 @@ F:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.O
 F:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.dll
 F:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.xml
 F:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.pdb
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\bin\Debug\NTST.ScriptLinkService.Objects.dll
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\bin\Debug\NTST.ScriptLinkService.Objects.pdb
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\bin\Debug\NTST.ScriptLinkService.Objects.xml
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.vbprojAssemblyReference.cache
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.Resources.resources
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.vbproj.GenerateResource.cache
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.vbproj.CoreCompileInputs.cache
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.dll
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.xml
+E:\GitHub\spectrumhealthsystems\avatool-web-service\src\NTST.ScriptLinkService.Objects\obj\Debug\NTST.ScriptLinkService.Objects.pdb

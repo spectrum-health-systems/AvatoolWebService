@@ -1,36 +1,43 @@
 ﻿/* PROJECT: Avatool-Web-Service (https://github.com/spectrum-health-systems/Avatool-Web-Service)
  *    FILE: Avatool_Web_Service.AvatoolWebService.asmx.cs
- * UPDATED: 12-11-2020-9:18 AM
+ * UPDATED: 1-8-2021-11:43 AM
  * LICENSE: Apache v2 (https://apache.org/licenses/LICENSE-2.0)
  *          Copyright 2020 A Pretty Cool Program All rights reserved
  */
 
-/* Version 1.2-beta
+/************************************************************************************************************************
+ * WARNING: THIS IS THE DEVELOPMENT BRANCH                                                                              *
+ ************************************************************************************************************************
+ *
+ * THIS IS THE v1.1.xxxxx.xxxx DEVELOPMENT BRANCH!
  */
 
-/* ==========================
- * A NOTE ABOUT CODE COMMENTS
- * ==========================
- * The MyAvatarWebService (MAWS) source is heavily commented. This goes against best practice, but since other
- * organizations may use it, I want to make it abundantly clear as to what MAWS does, and how it works. If you fork MAWS
- * for your own development, please do not remove the original comments (and add nice, detailed comments of your own!).
+/************************************************************************************************************************
+ * A NOTE ABOUT CODE COMMENTS                                                                                           *
+ ************************************************************************************************************************
  *
- * If you are viewing the development branch code, you will also see TODO comments.
+ * I've tried to make this sourcecode as human-readable as possible, but since other organizations may use MAWS I've
+ * decided to heavily comment everything as well. I know this goes against best practice, however since Netsmart doesn't
+ * do the best job of making everything *they* do transparent, I want to make it sure that *my* code is as clear as
+ * possible as to what it does, and how it does it.
+ *
+ * If you fork MAWS for your own development, please do not remove the original comments (and add nice, detailed comments
+ * for any functionality you add!).
  */
 
 using System;
 using System.ComponentModel;
 using System.Web.Services;
+
 using NTST.ScriptLinkService.Objects;
 
 namespace Avatool_Web_Service
 {
-    /// <summary>Summary description for MAWS</summary>
-    /// <remarks>This information is required.</remarks>
+    /// <summary>Required for MAWS.</summary>
+    /// <remarks>Do not remove this block of code.</remarks>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [ToolboxItem(false)]
-
     public class AvatoolWebService : WebService
     {
         /// <summary>Returns the MAWS version number.</summary>
@@ -41,7 +48,7 @@ namespace Avatool_Web_Service
 
         /// <summary>Performs an MAWS "action".</summary>
         /// <param name="sentOptionObject">The OptionObject2 object sent from myAvatar.</param>
-        /// <param name="action">The MAWS action perform.</param>
+        /// <param name="action">          The MAWS action perform.</param>
         /// <returns>A completed OptionObject that MAWS will return to myAvatar.</returns>
         /// <remarks>This method is required by myAvatar. Do not remove it!</remarks>
         [WebMethod]
@@ -101,7 +108,6 @@ namespace Avatool_Web_Service
 
             var returnOptionObject = sentOptionObject;
 
-
             // Loop through forms
             foreach(var form in returnOptionObject.Forms)
             {
@@ -125,10 +131,8 @@ namespace Avatool_Web_Service
 
             //Ask what to do?
 
-
             //Trim()
             //var finalValue = subscriberPolicyNumberValue.Trim();
-
 
             //Put the trimmed data into the box
 
@@ -136,9 +140,7 @@ namespace Avatool_Web_Service
             return CompleteOptionObject(sentOptionObject, returnOptionObject, true, false);
         }
 
-        /// <summary>
-        /// Verify that the Inpatient Admission Date is the same as the system date.
-        /// </summary>
+        /// <summary>Verify that the Inpatient Admission Date is the same as the system date.</summary>
         /// <param name="sentOptionObject">The sent OptionObject</param>
         /// <returns>A completed OptionObject.</returns>
         public static OptionObject2 VerifyInpatientAdmissionDate(OptionObject2 sentOptionObject)
@@ -251,19 +253,16 @@ namespace Avatool_Web_Service
             //    returnOptionObject.ErrorMesg = "[OUT OF BOUNDS ERROR]\nType of admission: " + typeOfAdmission + "\n" + "Date: " + preAdmitToAdmissionDate;
             //}
 
-
             /* We need to make sure that the OptionObject is completed prior to returning it.
              */
             return CompleteOptionObject(sentOptionObject, returnOptionObject, true, false);
         }
 
-        /// <summary>
-        /// Completes the content of an OptionObject2 object.
-        /// </summary>
-        /// <param name="sentOptionObject">A complete OptionObject that contains the original data.</param>
+        /// <summary>Completes the content of an OptionObject2 object.</summary>
+        /// <param name="sentOptionObject">  A complete OptionObject that contains the original data.</param>
         /// <param name="returnOptionObject">Data that will add to, or overwrite, data in the sentOptionObject.</param>
-        /// <param name="recommended">Fields that are recommended to set (true/false) [true].</param>
-        /// <param name="notRecommended">Fields that not recommended to set (true/false) [false].</param>
+        /// <param name="recommended">       Fields that are recommended to set (true/false) [true].</param>
+        /// <param name="notRecommended">    Fields that not recommended to set (true/false) [false].</param>
         /// <returns>A completed OptionObject</returns>
         public static OptionObject2 CompleteOptionObject(OptionObject2 sentOptionObject, OptionObject2 returnOptionObject, bool recommended, bool notRecommended)
         {
@@ -276,13 +275,13 @@ namespace Avatool_Web_Service
 
             // Since these fields MUST be explicitly set prior to returning the OptionObject2, they are always set. If
             // these fields are null when returned to Avatar, the script will fail.
-            completedOptionObject.EntityID        = sentOptionObject.EntityID;
-            completedOptionObject.Facility        = sentOptionObject.Facility;
-            completedOptionObject.NamespaceName   = sentOptionObject.NamespaceName;
-            completedOptionObject.OptionId        = sentOptionObject.OptionId;
+            completedOptionObject.EntityID = sentOptionObject.EntityID;
+            completedOptionObject.Facility = sentOptionObject.Facility;
+            completedOptionObject.NamespaceName = sentOptionObject.NamespaceName;
+            completedOptionObject.OptionId = sentOptionObject.OptionId;
             completedOptionObject.ParentNamespace = sentOptionObject.ParentNamespace;
-            completedOptionObject.ServerName      = sentOptionObject.ServerName;
-            completedOptionObject.SystemCode      = sentOptionObject.SystemCode;
+            completedOptionObject.ServerName = sentOptionObject.ServerName;
+            completedOptionObject.SystemCode = sentOptionObject.SystemCode;
 
             // Since it is recommended that these be explicitly set prior to returning the OptionObject2, they should
             // always be set by passing "true" as the value for the "recommended" argument. The if statement does its
@@ -309,7 +308,7 @@ namespace Avatool_Web_Service
 
             // Since it is recommended that these NOT BE explicitly set prior to returning the OptionObject2, avoid
             // setting them by passing "false" as the value for the "recommended" argument. Generally, if these fields
-            // contain data when returned to myAvatar, this script will fail. The if statement does its  best job to
+            // contain data when returned to myAvatar, this script will fail. The if statement does its best job to
             // catch any invalid argument values.
             if(notRecommended)
             {

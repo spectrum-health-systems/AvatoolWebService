@@ -80,10 +80,20 @@
     <Compile Include="Resources\Dev\avatar-web-service-snippits.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\Doc\avatar-web-service-changelog.md" />
+    <Content Include="Resources\Doc\changelog.md" />
     <Content Include="Resources\Dev\avatar-web-service-development-notes.md" />
     <None Include="packages.config" />
     <Content Include="avatool-web-service.licenseheader" />
+    <Content Include="Resources\Doc\acknowledgements.md" />
+    <Content Include="Resources\Doc\additional-reading.md" />
+    <Content Include="Resources\Doc\built-with.md" />
+    <Content Include="Resources\Doc\code-of-conduct.md" />
+    <Content Include="Resources\Doc\contributing.md" />
+    <Content Include="Resources\Doc\contributors.md" />
+    <Content Include="Resources\Doc\known-issues.md" />
+    <Content Include="Resources\Doc\related-projects.md" />
+    <Content Include="Resources\Doc\roadmap.md" />
+    <Content Include="Resources\Doc\support.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,18 +2,17 @@
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
-' General Information about an assembly is controlled through the following 
-' set of attributes. Change these attribute values to modify the information
-' associated with an assembly.
+' General Information about an assembly is controlled through the following set of attributes. Change these attribute
+' values to modify the information associated with an assembly.
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("NTST.ScriptLinkService.Objects")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("NTST.ScriptLinkService.Objects")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2011")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("NTST.ScriptLinkService.Objects")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("NTST.ScriptLinkService.Objects")>
+<Assembly: AssemblyCopyright("Copyright © Microsoft 2011")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
@@ -22,14 +21,10 @@ Imports System.Runtime.InteropServices
 
 ' Version information for an assembly consists of the following four values:
 '
-'      Major Version
-'      Minor Version 
-'      Build Number
-'      Revision
+' Major Version Minor Version Build Number Revision
 '
-' You can specify all the values or you can default the Build and Revision Numbers 
-' by using the '*' as shown below:
-' <Assembly: AssemblyVersion("1.0.*")> 
+' You can specify all the values or you can default the Build and Revision Numbers by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.20346.1422")>
-<Assembly: AssemblyFileVersion("1.0.20346.1422")>
+<Assembly: AssemblyVersion("1.0.21008.1618")>
+<Assembly: AssemblyFileVersion("1.0.21008.1618")>
